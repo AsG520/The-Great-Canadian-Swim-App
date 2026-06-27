@@ -1,0 +1,278 @@
+/* HTML Body */
+body {
+    font-family: 'Montserrat';
+    text-align: center;
+    justify-content: center;
+    display: flex; 
+    height: 100vh;
+    width: 100vh;
+    flex-direction: column;
+    background-image: url(background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-x: hidden;
+}
+
+footer {
+    text-align: left;
+    transform: translateX(35px);
+    animation-name: fadeIn;;
+    animation-timing-function: ease-in-out;
+    animation-duration: 3s;
+    animation-delay: 5s;
+    animation-fill-mode: backwards;
+    animation-iteration-count: 1;
+    animation-play-state: running;
+}
+
+/* HTML Classes */ 
+.quote-box {
+    height: 50px;
+    width: 360px;
+    background-color: lightblue;
+    border-top: none;
+    border-bottom: none;
+    border-right: none;
+    border-left: none;
+    color: black;
+    border-radius: 50px;
+    text-align: center;
+    box-shadow: 5px 5px 100px 20px whitesmoke, -5px -5px 100px 20px whitesmoke; 
+    border-color: none;
+    justify-content: center;
+    font-weight: 600;
+    animation-name: fadeIn;
+    animation-duration: 3s;
+    animation-delay: 5s;
+    animation-fill-mode: backwards;
+    animation-play-state: running;
+    animation-iteration-count: 1;
+    display: flex;
+    overflow-wrap: break-word;
+    animation-timing-function: ease-in-out;
+}
+
+.loader {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.disappear {
+    animation-name: vanish;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-play-state: running;
+}
+
+.container-footer {
+    display: flex;
+    justify-content: flex-start;
+    text-align: center;
+    flex-direction: column;
+    transform: translateX(-255px);
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+    width: 100vh;
+    align-items: center;
+    transform: translateX(70px);
+}
+
+/* HTML IDs */
+#word-contact-us, #word-follow-us {
+    text-decoration-line: underline;
+    animation-name: fadeIn;
+    animation-timing-function: ease-in-out;
+    animation-duration: 3s;
+    animation-delay: 5s;
+    animation-fill-mode: backwards;
+    animation-play-state: running;
+}
+
+#word-phone, #word-email, #word-address {
+    animation-name: fadeIn;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out; 
+    animation-delay: 5s;
+    animation-fill-mode: backwards;
+    animation-iteration-count: 1;
+    animation-play-state: running;
+    cursor: pointer;
+}
+
+#twitter-picture, #instagram-picture, #tiktok-picture {
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    animation-name: fadeIn;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-play-state: running;
+    animation-timing-function: ease-in-out;
+}
+
+#day-number, #word-trips-canada, #word-my-total, #word-total-distance{
+    animation-name: fadeIn;
+    animation-timing-function: ease-in-out;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-delay: 5s;
+    animation-fill-mode: backwards;
+    animation-play-state: running;
+    text-shadow: 2px 2px 10px black, -2px -2px 10px;
+}
+
+#word-address:hover, #company-rights:hover, #word-email:hover, #word-phone:hover, #day-number:hover, #word-trips-canada:hover, #word-my-total:hover, #word-total-distance:hover {
+    text-decoration-line: underline;
+}
+
+#word-email:active, #word-phone:active, #word-address:active, #reset:active, #submit:active, #twitter-picture:active, #instagram-picture:active, #tiktok-picture:active {
+    transform: translateY(3px);
+}
+
+#my-total:active, #total-distance:active, #number-trips:active {
+    transform: translateY(2px);
+}
+
+#twitter-picture:hover, #instagram-picture:hover, #tiktok-picture:hover {
+    scale: 1.20;
+}
+
+#word-contact-us:hover, #word-follow-us:hover {
+    text-shadow: 2px 2px 40px black, -2px -2px 40px black;
+}
+
+#total-distance, #number-trips, #my-total {
+    height: 25px;
+    width: 150px;
+    text-align: center;
+    border-radius: 20px;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    border-bottom: none;
+    background-color: #49a09d;
+    box-shadow: 5px 0px 20px 5px whitesmoke, -5px 0px 20px 5px whitesmoke;
+    font-weight: 550;
+    animation-name: fadeIn;
+    animation-timing-function: ease-in-out;
+    animation-duration: 3s;
+    animation-play-state: running;
+    animation-iteration-count: 1;
+    animation-delay: 5s;
+    animation-fill-mode: backwards;
+    transform: translateY(5px);
+}
+
+#calendar {
+    border-radius: 10px;
+    border-top: none;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+    box-shadow: 5px 0px 20px 5px whitesmoke, -5px 0px 20px 5px whitesmoke;
+    background-color: #c2e59c;
+    animation-name: fadeIn;
+    animation-timing-function: ease-in-out;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-play-state: running;
+    animation-delay: 5s;
+    animation-fill-mode: backwards;
+    cursor: pointer;
+}
+
+#reset, #submit {
+    height: 40px;
+    width: 100px;
+    border-radius: 50px;
+    color: white;
+    background: linear-gradient(to right, #3498db, #2c3e50);
+    border-top: none;
+    border-bottom: none;
+    border-right: none;
+    border-left: none;
+    box-shadow: 5px 0px 100px 20px whitesmoke, -5px 0px 100px 20px whitesmoke;
+    font-weight: 600;
+    animation-name: fadeIn;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 5s;
+    animation-fill-mode: backwards;
+    animation-play-state: running;
+    animation-iteration-count: 1;
+    cursor: pointer;
+}
+
+#loader-title {
+    font-size: large;
+    font-weight: 700;
+}
+
+#loader-developers {
+    font-size: medium; 
+    text-decoration-line: underline;
+}
+
+#loader-quote {
+    font-style: italic;
+    font-size: small;
+}
+
+#loader-version {
+    font-size: smaller;
+}
+
+#submit:hover, #reset:hover {
+    background: linear-gradient(to right, #185a9d, #43cea2);
+    color: white;
+    box-shadow: 5px 0px 50px 5px #185a9d, -5px 0px 50px 5px #185a9d;
+}
+
+#my-total:hover, #total-distance:hover, #number-trips:hover {
+    background-color: lightblue;
+}
+
+#calendar:hover {
+    background-color: #49a09d;
+}
+
+.quote-box:hover {
+    text-decoration-line: underline;
+    background-color: white;
+}
+
+/* CSS @keyframes Animations */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes vanish {
+    0% {
+        visibility: visible;
+    }
+    50% {
+        visibility: visible;
+    }
+    100% {
+        visibility: hidden;
+    }
+}

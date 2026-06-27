@@ -1,0 +1,46 @@
+Time Organizer - iPOTS Reminder App
+By: Amanjot.S & Jonathan.F
+
+2026 - Summer Co-op - Mr. Vale
+
+Note: This file will track the amount of total hours we spent programming 
+this app, recording our time duration every time we decided to code together.
+
+Sunday, 17 May
+- Duration/Time: 1h
+
+Monday, 18 May
+- Duration/Time: 1.5h
+
+Tuesday, 19 May
+- Duration/Time: 2h
+
+Wednesday, 20 May
+- Duration/Time: 1.5h
+
+Thursday, 21 May
+- Duration/Time: 1h
+
+Friday, 22 May
+- Duration/Time: 2.5h
+
+Saturday, 23 May
+- Duration/Time: 2.5h
+
+Sunday, 24 May
+- Duration/Time: 2h
+
+Monday, 25 May
+- Duration/Time: 1
+
+Tuesday, 26 May
+- Duration/Time: 1.5h
+
+Saturday, 20 June
+- Duration/Time: 1h
+
+Monday, June 22
+- Duration/Time: 1.5h
+
+Tuesday, June 23
+- Duration/Time: 0.75h

@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Cabin:ital,wght@0,400..700;1,400..700&family=Google+Sans+Code:ital,wght,MONO@0,300..800,1;1,300..800,1&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Press+Start+2P&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>iPOTS Reminder App - 2026</title>
+    <link rel="shortcut icon" href="iPOTS-logo.png" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="loader">
+      <div id="loader-title">iPOTS Swimming Reminder App</div>
+      <div id="loader-developers">Developed By: Amanjot</div>
+      <br />
+      <img src="loader-logo.png" height="100" width="100" />
+      <img src="loader-gif.gif" height="400" width="550" />
+      <div id="loader-quote">
+        The water is your friend... you don't have to fight with water, just
+        share the same spirit as the water, and it will help you move." -
+        Alexandr Popov
+      </div>
+      <br />
+      <div id="loader-model">Version Model: v.2026/iPOTS</div>
+    </div>
+
+    <div class="quote-box">
+      <div id="word-quote-box">"Progress is not linear."</div>
+    </div>
+    <div class="container">
+      <form>
+        <label id="day-number">📅 Day #1</label>
+        <input min="2026-05-25" type="date" id="calendar" value="" />
+        <br />
+        <br />
+        <label id="word-total-distance">🏊🏻‍♀️ Total Distance:</label>
+        <br />
+        <input
+          type="number"
+          min="0"
+          id="total-distance"
+          maxlength="10"
+          value="Enter Distance in (km)"
+        />
+        <br />
+        <br />
+        <label id="word-my-total">📈 My Total:</label>
+        <br />
+        <input
+          type="text"
+          id="my-total"
+          value="Total Distance in (km)"
+          readonly
+        />
+        <br />
+        <br />
+        <label id="word-trips-canada">🍁 # of Trips Across Canada</label>
+        <br />
+        <input type="text" id="number-trips" readonly />
+        <br />
+        <br />
+        <input type="button" id="submit" value="✅ Submit" />
+        <input
+          type="button"
+          id="reset"
+          value="🔄 Reset"
+          onclick="alarmReset()"
+        />
+      </form>
+    </div>
+    <script src="function.js"></script>
+    <footer>
+      <div class="container-footer">
+        <div class="footer-content">
+          <h3 id="word-contact-us">Contact Us</h3>
+          <p id="word-email" onclick="openEmail()">
+            📧 Email: <br />steffimanica@gmail.com
+          </p>
+          <p id="word-phone" onclick="openNumber()">
+            📞 Phone: <br />+1 (416) 550-9762
+          </p>
+          <p id="word-address" onclick="openAddress()">
+            🌎 Address: <br />Mississauga RPO Dundas Clayhill<br />
+          </p>
+          <iframe
+            src="https://embed.waze.com/iframe?zoom=16&lat=43.570553&lon=-79.627667&ct=livemap"
+            height="75"
+            width="250"
+            allowfullscreen
+            id="online-map"
+          >
+          </iframe>
+        </div>
+        <div class="footer-content">
+          <h3 id="word-follow-us">Follow Us</h3>
+          <img
+            src="instagram-logo.png"
+            id="instagram-picture"
+            alt="Instagram"
+            onclick="alertInstagram()"
+          />
+          <img
+            src="tiktok-logo.png"
+            id="tiktok-picture"
+            alt="TikTok"
+            onclick="alertTiktok()"
+          />
+          <img
+            src="twitter-logo.png"
+            id="twitter-picture"
+            alt="Twitter"
+            onclick="alertTwitter()"
+          />
+        </div>
+      </div>
+      <div class="bottom-bar">
+        <p id="company-rights">&copy; 2026 company. All rights reserved</p>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,152 @@
+Journey Documentation - iPOTS Reminder App
+By: Amanjot.S & Jonathan.F
+
+2026 - Summer Co-op - Mr. Vale
+
+Note: This file is used to record our progress over time. Completed tasks, updated features, and other major events will be noted for reference 
+each time we work on this app. 
+
+Day 1 - Sunday, 17 May
+- Initialized README.txt, will update later over time for GitHub references. 
+- Created Main.java and ran hello world program to see if program can output data.
+- Researched different potential methods to launch an app from Java file (e.g. use VS Code for programming and Android Studio to publish interface).
+- Linked Live Share extension between us, so we can both edit on the Main.java together without having refreshing issues. 
+- Jonathan created GitHub account and setup VS code for program usage. 
+
+Day 2 - Monday, 18 May
+- Created index.html, function.js, and style.css files instead of Main.java.
+- Deleted the Main.java file forever (will not be programming in Java language).
+- Researched a better approach for installing website as an app from the 3 points above any online published website.
+- Will use GitHub pages to make a domain and publish the website online.
+- Sent email to Ms. Manica about the features, ideas, and function of the website.
+- Discussed a method called PWS, which will be used to handle the app name and upload custom logo for site.
+- Experimented with index.html and style.css to see if both files are compactable.
+- Attached style.css and function.js with the main index.html file.
+
+Day 3 - Tuesday, 19 May
+- Jonathan designed a logo using Paint and programmed using favicon.
+- Attended online meeting session with Ms. Manica about the design for the app (e.g apperance, features, function, theme, and etc) and asked general questions.
+- Amanjot worked on programming the social icons using image tags (<img>), still working on cropping pictures for interface.
+- Discussed a potential publishing method by using Median.co to launch the app with GitHub pages (FINAL METHOD!).
+
+Day 4 - Wednesday, 20 May
+- Used Google Font to receive the Montserrat font by the embedded code and pasted it on the index.html file.
+- Jonathan made corrections to the website logo, due to scaling and rendering issues.
+- Amanjot downloaded the social media icons from Flaticon and moved them to the same project folder.
+- Programmed basic animation using @keyframes in style.css for the social icons.
+- Made the social icons clickable, using <a> and functionable (target="_blank") by opening specific website on another tab.
+- Designed the potential header for the app, will make the design and function better in the future using .header-box on style.css.
+- Had connection issues with the Live Share between two linked accounts. 
+
+Day 5 - Thursday, 21 May
+- Included hover effects for the social icons using scale CSS property.
+- Made the quote box using div tag (<div>), applied basic CSS properties and will update function later using function.js.
+- Discovered ways on how to fix the Live Share bug issue, still currently fetching the problems.
+- Amanjot explained index.html and style.css program code to Jonathan from yesterday (Day 4).
+
+Day 6 - Friday, 22 May
+- Downloaded node.js for JavaScript programming and compiling.
+- Used form tag (<form>) to include label (<label>) and input (<input>) for 'Total Distance: ', 'My Total: ', and '# of Trips Across Canada'.
+- Fixed error with function.js linkage with index.html using script tag <script>.
+- Downloaded CodeTogether extension for working together online.
+- Discovered that Live Share servers were down and not working properly. 
+- Added reset and submit button using <input type="button">.
+- Declared variables (e.g. myDistance, submitButton, myTotal, and etc) from the document.getElementById() property.
+- Initialized functions (e.g. updateMyTotal, updateTrips, and resetMyDistance) to compute calculations and update certain values.
+- Gave buttons '.addEventListener' for when they are clicked and recall the corresponding functions that are passed as the parameters.
+- In style.css gave word-trips-canada, word-my-total, and word-total-distance the ':hover' for text-decoration-line: underline attribute.
+
+Day 7 - Saturday, 23 May
+- Styled buttons using CSS properties (e.g. box-shadow, background-color, and etc) in style.css.
+- Added emojis to the <label> for each input type (e.g. 🏊🏻‍♀️ Total Distance:, 📈 My Total:, and 🍁 # of Trips Across Canada) in index.html.
+- Centered elements using display: flex, justify-content: center, align-items: center, width: 100vh, and height: 100vh, will fix centering later not finished yet.
+- Gave hovering effects to the three input boxes that changes the background-color to lightblue.
+- Applied animations using @keyframes to the buttons, input boxes, labels, and calendar.
+- Imported calendar using <input type="date">, which is already designed in HTML.
+- Removed "+ km" for the '# of Trips Across Canada' because unit doesn't relate with topic.
+- Gave hovering effects to the three 4 labels (e.g. Day #1, 🏊🏻‍♀️ Total Distance:, 📈 My Total:, and 🍁 # of Trips Across Canada), which underline the text.
+- Pushed the day-number and calendar into the form because centering was more supportive.
+- Commented out the quote-box and four social icon images, will update later.
+- Gave hovering effect to the calendar, which changes the background-color: #49a09d.
+
+Day 8 - Sunday, 24 May
+- Downloaded 'Mobile Preview - Phone & Tablet Simulator' VS Code extension, to see how interface would look in phone preview.
+- Swtiched white to whitesmoke in every box-shadow CSS attribute in style.css.
+- Designed a TimeOrganizer.txt that will track the amount of time spent programming this app.
+- Provided labels (e.g. 🏊🏻‍♀️ Total Distance:, 📈 My Total:, and 🍁 # of Trips Across Canada), text-shadow properties.
+- Changed the background color of the app to lightblue gradient with linear-gradient() in style.css.
+- Gave buttons different style related to the new background-color (e.g. background-color, box-shadow, border, and etc) in style.css.
+- Removed unnecessary lines of code from index.html and style.css to prevent bugs and problems from occuring.
+- Fixed centering of the app according to the phone display using flex: display, justify-content: center, align-items: center, and .container{} in style.css.
+- Downloaded better visually appealing social icon pictures that have no background color.
+- Not using LinkedIn social icon because iPOTS doesn't have that specific platform official account.
+- Jonathan worked on the footer for the app, which displays the contact information and social pages.
+- Amanjot explained code to Jonathan from Day 7 - Saturday, 23 May to Day 8 - Sunday, 24 May.
+
+Day 9 - Monday, 25 May
+- Included emojis for the footer-content (e.g. email, phone, and address) and day number.
+- Used :active {transform: translateY();} to add a click animation for the input boxes and footer details.
+- Resized input boxes to height: 25px; and width: 150px; for viewer display (prevent it from being too small!).
+- Removed <br> tags seperating the submit and reset vertically, resulting them to be beside one another (horizontal).
+- Used :hover {text-decoration-line: underline;} for footer information (e.g. email, phone, & address) and day number.
+- Targeted email, phone, and address to provide href="" with their specific corresponding links.
+- Provided text-decortation-line: underline; to "contact us" and "follow us" for easier accessbility.
+- Changed the hover scaling for the social icons from 1.05 to 1.20 (more larger/bigger).
+- Translated every component to the left of the screen using transform: translateX();.
+- Amanjot and Jonathan discussed about display: flex; and how it functions towards this app on a blank paper.
+- Put overflow-x: hidden; to hide the scroll bar at the bottom of the screen and kept overflow-y for vertical scrolling.
+- Brainstormed different color themes for this app (e.g. theme, style, and display) using Hex Color Codes.
+
+Day 10 - Tuesday, 26 May
+- Brainstormed features to include later throughout the summer on a blank sheet of paper.
+- Uncommented the quote-box from index.html and styled/formatted it on the screen.
+- Created a title for app display ("iPOTS Reminder App w/ a notepad emoji) toward the right.
+- Animated contact-us and follow-us with CSS box-shadow property when hovering on it.
+- Gave pointer property to the cursor when hovering above anything that is clickable (e.g. cursor: pointer).
+- Animated footer with animation-name, animation-duration, animation-timing-function, and etc matching other animated elements within the app interface.
+- Animated title and quote-box with the same animation properties as the footer (e.g. animation-name, animation-duration, and etc).
+- Went to Great Canadian Swim on Instagram and wrote the quotes from their previous posts online.
+- Used an array called quotes in function.js to store each of the following quotes.
+- Received the day, month, and year values using new Date() in function.js to update the calendar later.
+- Explained Jonathan all of the function and code from Day 9 - Monday, 25 May. 
+
+Day 11 - Saturday, 20 June
+- Imported Waze map using <iframe> with the following link ("https://ul.waze.com/ul?place=EjpDbGF5aGlsbCBSZCAmIER1bmRhcyBTdCBXLCBNaXNzaXNzYXVnYSwgT04gTDVCIDJOOCwgQ2FuYWRhImYiZAoUChIJ9W4IdupGK4gR9dogcXjXvCwSFAoSCfVuCHbqRiuIEfXaIHF417wsGhQKEgkbpcN-wUYriBHXF0FT783zKRoUChIJ0TmvlX82K4gR5XjdDgvDK5AiCg22VvgZFUHIidA&ll=43.57055260%2C-79.62766710&navigate=yes&utm_campaign=default&utm_source=waze_website&utm_medium=lm_share_location").
+- Declared functions such as: openEmail, openAddress, & openNumber and implemented confirm pop-up/if conditional for each of these functions.
+- Used onclick="" in index.html to call the function and preform the task.
+- Changed the alert() method to confirm() inside of alertTiktok, alertInstagram, & alertTwitter to enhance an option for decline and proceeding.
+- Made a function called alarmReset() to make a decision interface if the user wants to reset the total progress.
+- Initialized window.open() with "_blank" to open the corresponding link in another tab.
+- Removed the <a> tags from the social icon images because the window.open() is handling the URLs with the following declared functions.
+- Added .addEventListener to the brand new declared functions (e.g. openEmail, openAddress, & openNumber) with "click" attribute.
+- Amanjot prepared arranging the Discord meeting on Monday, 22 June prior to discussing about the issues and errors with function.js (e.g. updateQuotes() and let date = new Date()).
+
+Day 12 - Monday, 22 June
+- Discussed the issue regarding the day tracker based on the calendar and determined it will be revisited and resolved on a later date.
+- Focused on the functionality of the quote presentation system, going through how the quotes will be cycled through the application and deciding to implement a For Loop.
+- Review the overall logic of a For Loop in javascript (e.g. structure, conditions and execution), ensuring no mistakes were made and no logical errors.
+- Conducted many attempts of troubleshooting the quote For Loop to identify any source of issue, ultimately determining that the For Loop was not functioning and later implemented viable solution.
+- Performed tests prior to the fix, identifying a new issue regarding the speed of the For Loop, where it cycled too quickly, leaving only the final quote to be seen on screen.
+- Determined that both the applications loading duration and the speed of the For Loop between each quote (element in array) was too swift, altering the text rapidly.
+- Discussed possible approaches to improve quote visibility, potentially using some sort of timer to slow down the execution or making the quote alter based on physical interaction such as button click.
+- Conducted research on how to slow down the For Loop and landed on the use of setInterval and incorporated it into the existing logic.
+- Encountered additional bugs while implementing setInterval, as the For Loop continuing to execute (e.g. i value increasing) while waiting for the time break to end, resulting in only the first and last quote to be displayed.
+- Came to the conclusion that for the For Loop to slow down a timer would need to be placed within the Loop, thus performing at each succession, however this would not work with what we have so far and may be too difficult to implement.
+- Concluding the session with an incomplete result, deciding to revisit the problem on a later date with a fresh mind and further days of thought.
+
+Day 13 - Tuesday, 23 June
+- Made a <div> and gave it a class="loader", which is the parent of the other <div>.
+- Appended a <div> for title within the main loader and gave id="loader-title".
+_ Initialized a <div> for the developers within the main loader and gave id="loader-developers".
+- Added a <div> for the gif within the main loader, which contains a src path to "loader-gif.gif" in the project folder and gave id="loader-quote".
+- Asserted a <div> for the app model within the main loader and gave id="loader-quote".
+- Targeted the main parent loader using .loader in style.css and gave it CSS properties (e.g. position: fixed;, height: 100%;, and etc).
+- Gave loader-title font-size: large; and font-weight: 700; in style.css.
+- font-size: medium; and text-decoration-line: underline; to loader-developers in style.css.
+- Enhanced the loader-quote with font-style: italic; and font-size: small; in style.css.
+- loader-version was just targeted with one CSS property called font-size: smaller;.
+- .disappear was a initialized class with animation properties in style.css but was not viewed in index.html file.
+- @keyframes called the animation with the characteristics from 0% to 100% with opacity and visibility attributes.
+- Declared variable called loader in function.js, which is the parent loader in index.html and can be seen in both workspaces.
+- .addEventListener was added to the window with "load" and vanish function.
+- vanish() function was declared in function.js to append the disappear class in style.css to loader which is in index.html. As a result, both index.html and style.css can now see disappear as a class and preform the following tasks.
