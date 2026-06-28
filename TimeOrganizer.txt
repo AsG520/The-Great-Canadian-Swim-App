@@ -44,3 +44,9 @@ Monday, June 22
 
 Tuesday, June 23
 - Duration/Time: 0.75h
+
+Thursday, June 25
+- Duration/Time: 2h
+
+Saturday, June 27
+- Duration/Time: 1.5h
