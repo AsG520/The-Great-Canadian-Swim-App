@@ -1,9 +1,11 @@
 /* HTML Body */
 body {
     font-family: 'Montserrat';
+    display: flex; 
     text-align: center;
     justify-content: center;
-    display: flex; 
+    height: 100%;
+    width: 100%;
     flex-direction: column;
     background-image: url(background.jpg);
     background-repeat: no-repeat;
@@ -43,6 +45,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 100%;
+    width: 100%;
     animation-name: fadeIn;
     animation-timing-function: ease-in-out;
     animation-duration: 3s;
@@ -60,6 +64,8 @@ body {
     animation-timing-function: ease-in-out;
     animation-duration: 3s;
     animation-delay: 5s;
+    width: 100%;
+    height: 100%;
     animation-fill-mode: backwards;
     animation-iteration-count: 1;
     animation-play-state: running;
