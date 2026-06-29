@@ -4,8 +4,6 @@ body {
     text-align: center;
     justify-content: center;
     display: flex; 
-    height: 100vh;
-    width: 100vh;
     flex-direction: column;
     background-image: url(background.jpg);
     background-repeat: no-repeat;
@@ -13,22 +11,13 @@ body {
     overflow-x: hidden;
 }
 
-footer {
-    text-align: left;
-    transform: translateX(35px);
-    animation-name: fadeIn;;
-    animation-timing-function: ease-in-out;
-    animation-duration: 3s;
-    animation-delay: 5s;
-    animation-fill-mode: backwards;
-    animation-iteration-count: 1;
-    animation-play-state: running;
-}
-
 /* HTML Classes */ 
 .quote-box {
-    height: 50px;
-    width: 360px;
+    height: 25px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: lightblue;
     border-top: none;
     border-bottom: none;
@@ -36,10 +25,8 @@ footer {
     border-left: none;
     color: black;
     border-radius: 50px;
-    text-align: center;
     box-shadow: 5px 5px 100px 20px whitesmoke, -5px -5px 100px 20px whitesmoke; 
     border-color: none;
-    justify-content: center;
     font-weight: 600;
     animation-name: fadeIn;
     animation-duration: 3s;
@@ -47,9 +34,35 @@ footer {
     animation-fill-mode: backwards;
     animation-play-state: running;
     animation-iteration-count: 1;
-    display: flex;
-    overflow-wrap: break-word;
     animation-timing-function: ease-in-out;
+}
+
+.bottom-bar {
+    color: black;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation-name: fadeIn;
+    animation-timing-function: ease-in-out;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-play-state: running;
+    animation-delay: 5s;
+    animation-fill-mode: backwards;
+}
+
+.online-map {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation-name: fadeIn;
+    animation-timing-function: ease-in-out;
+    animation-duration: 3s;
+    animation-delay: 5s;
+    animation-fill-mode: backwards;
+    animation-iteration-count: 1;
+    animation-play-state: running;
 }
 
 .loader {
@@ -74,18 +87,9 @@ footer {
 
 .container-footer {
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     text-align: center;
     flex-direction: column;
-    transform: translateX(-255px);
-}
-
-.container {
-    display: flex;
-    height: 100vh;
-    width: 100vh;
-    align-items: center;
-    transform: translateX(70px);
 }
 
 /* HTML IDs */
@@ -116,6 +120,8 @@ footer {
     border-radius: 50px;
     animation-name: fadeIn;
     animation-duration: 3s;
+    animation-delay: 5s;
+    animation-fill-mode: backwards;
     animation-iteration-count: 1;
     animation-play-state: running;
     animation-timing-function: ease-in-out;

@@ -150,3 +150,17 @@ _ Initialized a <div> for the developers within the main loader and gave id="loa
 - Declared variable called loader in function.js, which is the parent loader in index.html and can be seen in both workspaces.
 - .addEventListener was added to the window with "load" and vanish function.
 - vanish() function was declared in function.js to append the disappear class in style.css to loader which is in index.html. As a result, both index.html and style.css can now see disappear as a class and preform the following tasks.
+
+Day 14 - Thursday, 25 June
+- [Jonathan Notes!]
+
+Day 15 - Saturday, 27 June
+- Initialized a GitHub repository for iPOTS Swimming Reminder App and attached all of the files in the following folder.
+- Watched videos on VS Code Terminal to push code into the GitHub repository, using commands (e.g. git add ., git commit -m "", and git push).
+- Came up with the idea to launch social media accounts (e.g. Instagram & TikTok) for this app and create modern/visually appealing online videos that will influence audience in downloading the app.
+- Used GitHub pages to launch the official domain of the online website (https://asg520.github.io/iPOTS-Swimming-Reminder-App/).
+- Learned method to use Bookmark that will create a temporary app, which we will test our outputs on until final launching using other software.
+- Discussed with Jonathan to book a meeting and explain all of the changes, updates, and features that Amanjot has came up with.
+- Shared GitHub repository with Jonathan (JF032109) to achieve a collaborative workflow when coding the app.
+- Deleted old GitHub repository under this app because VS Code Terminal was having issues in sending commands to GitHub repository.
+- Made GitHub repository public and gave tags to finalize this efficient workflow between VS Code and GitHub.
