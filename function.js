@@ -29,11 +29,6 @@ function vanish() {
     loader.classList.add("disappear");
 }
 
-// Horizontal Screen Prevention
-orientation.lock("portrait-primary").catch(function(error) {
-    console.log("Orientation lock failed: " + error);
-});
-
 // Updating Quotes
 let quotes = [
     "Effort is the point.", 
