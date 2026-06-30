@@ -96,14 +96,10 @@ function alertTiktok() {
     }
 }
 
-function resetMyDistance() {
-    myDistance.value = "0";
-}
-
 function alarmReset() {
     const confirmReset = confirm("Proceed with restarting your progress?");
     if (confirmReset) {
-        resetMyDistance();
+        myDistance.value = "0"
     }
 }
 
