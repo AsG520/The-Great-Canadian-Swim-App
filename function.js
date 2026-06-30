@@ -54,7 +54,14 @@ let quotes = [
     "One attempt is enough.",
     "Outcomes are optional.",
     "Different still counts.",
-    "Invisible effort still counts."
+    "Invisible effort still counts.",
+    "Today can look different.",
+    "You don't have to win.",
+    "This moment counts",
+    "There is no wrong way to try.",
+    "Trying is not a straight line.",
+    "Listening to your body counts.",
+    "Today is enough."
 ];
 
 function updateQuotes() {
