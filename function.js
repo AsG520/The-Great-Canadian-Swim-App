@@ -1,13 +1,14 @@
 // Declarations for Const Statements
 const D = 5514;
+const calendar = document.getElementById("calendar");
+const today = new Date();
 
 // Declarations for Let Statements
 let total = 0;
 let i = 0;
-let date = new Date();
-let day = date.getDate().toString();
-let month = date.getMonth().toString();
-let year = date.getFullYear().toString();
+let day = today.getDate();
+let month = today.getMonth() + 1;
+let year = today.getFullYear();
 let myDistance = document.getElementById("total-distance");
 let submitButton = document.getElementById("submit");
 let myTotal = document.getElementById("my-total");
@@ -21,6 +22,17 @@ let phoneNumber = document.getElementById("word-phone");
 let areaAddress = document.getElementById("word-address");
 let wordQuoteBox = document.getElementById("word-quote-box");
 let loader = document.querySelector(".loader");
+
+// Conditional for Calendar Feature
+if (day < 10) {
+    day = "0" + day;
+}
+
+if (month < 10) {
+    month = "0" + month;
+}
+
+calendar.value =  year + "-" + month + "-" + day;
 
 // Append .disappear in CSS to loader in HTML 
 window.addEventListener("load", vanish);
