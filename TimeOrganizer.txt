@@ -51,8 +51,29 @@ Thursday, June 25
 Saturday, June 27
 - Duration/Time: 1.5h
 
-Monday - June 29 
+Monday, June 29 
 - Duration/Time: 1.5h
 
-Tuesday - June 30
+Tuesday, June 30
 - Duration/Time: 1h
+
+Wednesday, July 1
+- Duration/Time: 1h
+
+Thursday, July 2
+- Duration/Time: 1.5h
+
+Friday, July 3
+- Duration/Time: 2h
+
+Saturday, July 4
+- Duration/Time: 1h
+
+Sunday, July 5
+- Duration/Time: 1h
+
+Monday, July 6
+- Duration/Time: 2h
+
+Tuesday, July 7
+- Duration/Time: 2h

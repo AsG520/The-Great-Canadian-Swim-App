@@ -1,4 +1,4 @@
-/* HTML Body */
+/* HTML Components */
 body {
     font-family: 'Montserrat';
     display: flex; 
@@ -6,11 +6,11 @@ body {
     justify-content: center;
     height: 100%;
     width: 100%;
+    color: white;
+    font-style: normal;
+    font-weight: 600;
     flex-direction: column;
-    background-image: url(background.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    overflow-x: hidden;
+    background-color: rgb(13, 17, 23);
 }
 
 /* HTML Classes */ 
@@ -20,27 +20,142 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: lightblue;
+    background-color: rgb(5, 5, 36);
     border-top: none;
     border-bottom: none;
     border-right: none;
     border-left: none;
-    color: black;
     border-radius: 50px;
-    box-shadow: 5px 5px 100px 20px whitesmoke, -5px -5px 100px 20px whitesmoke; 
     border-color: none;
     font-weight: 600;
     animation-name: fadeIn;
     animation-duration: 3s;
-    animation-delay: 5s;
-    animation-fill-mode: backwards;
+    animation-delay: 0s;
     animation-play-state: running;
     animation-iteration-count: 1;
     animation-timing-function: ease-in-out;
 }
 
+.challenges, .weekly-snapshot {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 30px;
+    color: white;
+    animation-name: fadeIn;
+    animation-timing-function: ease-in-out;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-play-state: running;
+    animation-delay: 0s;
+}
+
+.carousel {
+    margin-top: -25px;
+    width: 50%;
+    height: 150px;
+    border-top: none;
+    border-bottom: none;
+    border-right: none;
+    border-left: none;
+    display: flex;
+    overflow-x: auto;
+    align-items: center;
+}
+
+.carousel::-webkit-scrollbar {
+    display: none;
+}
+
+.carousel:hover .group {
+    animation-play-state: paused;
+}
+
+.group {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    height: 50px;
+    animation-name: spin;
+    animation-duration: 20s;
+    animation-direction: reverse;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    padding-right: 15px;
+}
+
+.card {
+    display: flex;
+    flex: 0 0 2px;
+    height: 90px;
+    width: 180px;
+    padding: 5px;
+    background: cornflowerblue;
+    font-size: 16px;
+    border-radius: 10px;
+    text-align: center;
+    align-items: center;
+}
+
+.card:hover {
+   transform: scale(1.1);
+}
+
+.carousel-weekly-snapshot {
+ margin-top: -25px;
+ margin: auto;
+    width: 45%;
+    height: 190px;
+    border-top: none;
+    border-bottom: none;
+    border-right: none;
+    border-left: none;
+    display: flex;
+    overflow-x: auto;
+    align-items: center;
+    overflow: hidden;
+    mask-image: linear-gradiesnt(to right, rgba(0, 0, 0, 1) 90%, rgba(0, 0, 0, 0) 100%);
+}
+
+.carousel-weekly-snapshot::-webkit-scrollbar {
+    display: none;
+}
+
+.carousel-weekly-snapshot:hover .group-weekly-snapshot {
+    animation-play-state: paused;
+}
+
+.group-weekly-snapshot {
+  display: flex;
+    align-items: center;
+    gap: 16px;
+    height: 50px;
+    animation-name: spin2;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    padding-right: 15px;
+}
+
+.card-weekly-snapshot {
+ display: flex;
+    flex: 0 0 2px;
+    height: 160px;
+    width: 200px;
+    padding: 5px;
+    background: cornflowerblue;
+    font-size: 16px;
+    border-radius: 10px;
+    text-align: center;
+    align-items: center;
+}
+
+.card-weekly-snapshot:hover {
+   transform: scale(1.1);
+}
+
 .bottom-bar {
-    color: black;
     text-align: center;
     display: flex;
     justify-content: center;
@@ -52,8 +167,7 @@ body {
     animation-duration: 3s;
     animation-iteration-count: 1;
     animation-play-state: running;
-    animation-delay: 5s;
-    animation-fill-mode: backwards;
+    animation-delay: 0s;
 }
 
 .online-map {
@@ -63,30 +177,9 @@ body {
     animation-name: fadeIn;
     animation-timing-function: ease-in-out;
     animation-duration: 3s;
-    animation-delay: 5s;
-    width: 100%;
-    height: 100%;
-    animation-fill-mode: backwards;
-    animation-iteration-count: 1;
-    animation-play-state: running;
-}
-
-.loader {
-    position: fixed;
-    height: 100%;
-    width: 100%;
-    background: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.disappear {
-    animation-name: vanish;
-    animation-duration: 5s;
-    animation-fill-mode: forwards;
     animation-delay: 0s;
+    width: 100%;
+    height: 100%;
     animation-iteration-count: 1;
     animation-play-state: running;
 }
@@ -101,13 +194,12 @@ body {
 }
 
 /* HTML IDs */
-#word-contact-us, #word-follow-us {
+#word-contact-us, #word-follow-us, #word-challenges, #word-weekly-snapshot {
     text-decoration-line: underline;
     animation-name: fadeIn;
     animation-timing-function: ease-in-out;
     animation-duration: 3s;
-    animation-delay: 5s;
-    animation-fill-mode: backwards;
+    animation-delay: 0s;
     animation-play-state: running;
 }
 
@@ -115,8 +207,7 @@ body {
     animation-name: fadeIn;
     animation-duration: 3s;
     animation-timing-function: ease-in-out; 
-    animation-delay: 5s;
-    animation-fill-mode: backwards;
+    animation-delay: 0s;
     animation-iteration-count: 1;
     animation-play-state: running;
     cursor: pointer;
@@ -128,22 +219,19 @@ body {
     border-radius: 50px;
     animation-name: fadeIn;
     animation-duration: 3s;
-    animation-delay: 5s;
-    animation-fill-mode: backwards;
+    animation-delay: 0s;
     animation-iteration-count: 1;
     animation-play-state: running;
     animation-timing-function: ease-in-out;
 }
 
-#day-number, #word-trips-canada, #word-my-total, #word-total-distance{
+#day-number, #word-trips-canada, #word-my-total, #word-total-distance {
     animation-name: fadeIn;
     animation-timing-function: ease-in-out;
     animation-duration: 3s;
     animation-iteration-count: 1;
-    animation-delay: 5s;
-    animation-fill-mode: backwards;
+    animation-delay: 0s;
     animation-play-state: running;
-    text-shadow: 2px 2px 10px black, -2px -2px 10px;
 }
 
 #word-address:hover, #company-rights:hover, #word-email:hover, #word-phone:hover, #day-number:hover, #word-trips-canada:hover, #word-my-total:hover, #word-total-distance:hover {
@@ -162,7 +250,7 @@ body {
     scale: 1.20;
 }
 
-#word-contact-us:hover, #word-follow-us:hover {
+#word-contact-us:hover, #word-follow-us:hover, #word-challenges:hover, #word-weekly-snapshot {
     text-shadow: 2px 2px 40px black, -2px -2px 40px black;
 }
 
@@ -175,16 +263,15 @@ body {
     border-right: none;
     border-top: none;
     border-bottom: none;
-    background-color: #49a09d;
-    box-shadow: 5px 0px 20px 5px whitesmoke, -5px 0px 20px 5px whitesmoke;
+    background-color: rgb(5, 5, 36);
+    color: white;
     font-weight: 550;
     animation-name: fadeIn;
     animation-timing-function: ease-in-out;
     animation-duration: 3s;
     animation-play-state: running;
     animation-iteration-count: 1;
-    animation-delay: 5s;
-    animation-fill-mode: backwards;
+    animation-delay: 0s;
     transform: translateY(5px);
 }
 
@@ -194,16 +281,60 @@ body {
     border-bottom: none;
     border-left: none;
     border-right: none;
-    box-shadow: 5px 0px 20px 5px whitesmoke, -5px 0px 20px 5px whitesmoke;
-    background-color: #c2e59c;
+    background-color: rgb(5, 5, 36);
+    color: white;
+    text-align: center;
     animation-name: fadeIn;
     animation-timing-function: ease-in-out;
     animation-duration: 3s;
     animation-iteration-count: 1;
     animation-play-state: running;
-    animation-delay: 5s;
-    animation-fill-mode: backwards;
+    animation-delay: 0s;
     cursor: pointer;
+}
+
+/* New line of code*/
+#alberta-trips, #british-columbia-trips, #manitoba-trips, #new-brunswick-trips, #newfoundland-and-labrador-trips, #nova-scotia-trips, #ontario-trips, #prince-edward-island-trips, #quebec-trips, #saskatchewan-trips, #alberta-trips2, #british-columbia-trips2, #manitoba-trips2, #new-brunswick-trips2, #newfoundland-and-labrador-trips2, #nova-scotia-trips2, #ontario-trips2, #prince-edward-island-trips2, #quebec-trips2, #saskatchewan-trips2, #session-number, #active-duration-percentage, #calorie-burnt,#session-number2 {
+    width: 50px;
+    height: 15px;
+    text-align: center;
+    font-weight: 700;
+    font-style: normal;
+    border-top: none;
+    border-bottom: none;
+    border-right: none;
+    border-left: none;
+    border-radius: 10px;
+    background: linear-gradient(to right, #3498db, #2c3e50);
+    color: white;
+}
+
+#alberta, #british-columbia, #manitoba, #new-brunswick, #newfoundland-and-labrador, #nova-scotia, #ontario, #prince-edward-island, #quebec, #saskatchewan {
+    width: 150px;
+    height: 80px;
+    background-color: rgb(5, 5, 36);
+    border-radius: 20px;
+    border-top: none;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+    padding-top: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+#active-duration, #sessions, #calorie-burn {
+    width: 250px;
+    height: 150px;
+    background-color: rgb(5, 5, 36);
+    border-radius: 20px;
+    border-top: none;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+    padding-top: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 
 #reset, #submit {
@@ -216,13 +347,11 @@ body {
     border-bottom: none;
     border-right: none;
     border-left: none;
-    box-shadow: 5px 0px 100px 20px whitesmoke, -5px 0px 100px 20px whitesmoke;
     font-weight: 600;
     animation-name: fadeIn;
     animation-duration: 3s;
     animation-timing-function: ease-in-out;
-    animation-delay: 5s;
-    animation-fill-mode: backwards;
+    animation-delay: 0s;
     animation-play-state: running;
     animation-iteration-count: 1;
     cursor: pointer;
@@ -250,7 +379,6 @@ body {
 #submit:hover, #reset:hover {
     background: linear-gradient(to right, #185a9d, #43cea2);
     color: white;
-    box-shadow: 5px 0px 50px 5px #185a9d, -5px 0px 50px 5px #185a9d;
 }
 
 #my-total:hover, #total-distance:hover, #number-trips:hover {
@@ -263,7 +391,7 @@ body {
 
 .quote-box:hover {
     text-decoration-line: underline;
-    background-color: white;
+    /* background-color: white; */
 }
 
 /* CSS @keyframes Animations */
@@ -288,5 +416,22 @@ body {
     }
     100% {
         visibility: hidden;
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: translateX(0%);
+    } 
+    100% {
+        transform: translateX(-100%); 
+    }
+}
+@keyframes spin2 {
+    0% {
+        transform: translateX(5%);
+    } 
+    100% {
+        transform: translateX(-95%); 
     }
 }

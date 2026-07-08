@@ -1,0 +1,173 @@
+/* HTML Components */
+body {
+    justify-content: center;
+    align-items: center;
+    color: rgb(28, 60, 101);
+    display: flex;
+    background-image: url("login-page-background.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-style: normal;
+    animation-name: fadeIn;
+    animation-duration: 6s;
+    animation-delay: 0s;
+    animation-fill-mode: forwards;
+    animation-play-state: running;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+}
+
+/* HTML Classes */ 
+.container {    
+    width: 450px;
+    height: 600px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    border-top: none;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    animation-name: borderEffect;
+    animation-timing-function: ease-in-out;
+    animation-delay: 5s;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+}
+
+.password-details, .email-details, .last-name-details, .first-name-details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2px;
+}
+
+/* HTML IDs */
+#sign-in-platforms {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row; 
+    gap: 30px;
+    margin-top: 20px;
+}
+
+#sign-up {
+    height: 30px;
+    width: 225px;
+    color: #F5F7F9;
+    font-style: normal;
+    font-size: 19px;
+    font-weight: 700;
+    text-align: center;
+    background-color: rgb(15, 192, 252);
+    border-radius: 20px;
+    border-top: none;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+    margin-top: 20px;
+}
+
+#footer-details {
+    justify-content: center;
+    color: black;
+    display: flex;
+    text-align: center;
+    margin-top: 40px;
+}
+
+#first-name, #last-name, #email-address, #password {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 25px;
+    border-radius: 10px;
+    border-top: none;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+#sign-up:hover {
+    background-color: rgba(5, 5, 36 , 0.7);
+}
+
+#sign-up:active, #google-logo:active, #apple-logo:active, #facebook-logo:active {
+    transform: translateY(1px);
+}
+
+#account-registration-logo:hover, #apple-logo:hover, #google-logo:hover, #facebook-logo:hover {
+    transform: scale(1.1);
+}
+
+#account-registration-logo {
+    margin-bottom: 15px;
+}
+
+#account-registration-word:hover, #first-name-word:hover, #last-name-word:hover, #email-word:hover, #password-word:hover, #login-word {
+    text-decoration-line: underline;
+}
+
+#login-word {
+    text-decoration-line: underline;
+    color: rgb(178, 58, 58);
+}
+
+#login-word:hover {
+    font-weight: 800;
+}
+
+/* HTML Pseudo-Element Notation */ 
+input::placeholder {
+    color: white;
+    font-style: normal;
+    font-weight: 450;
+    text-align: center;
+}
+
+input[type="text"], input[type="password"] {
+    color: white;
+    text-align: center;
+}
+
+/* HTML @keyframes Animations */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes borderEffect {
+    0% {
+        box-shadow: 0px 0px 15px 15px rgb(2, 89, 148);
+    }
+    25% {
+        box-shadow: 0px 0px 15px 15px rgb(23, 37, 49);
+    }   
+    50% {
+        box-shadow: 0px 0px 15px 15px rgb(91, 47, 33);
+    }
+    75% {
+        box-shadow: 0px 0px 15px 15px rgb(13, 4, 5);
+    }
+    100% {
+        box-shadow: 0px 0px 15px 15px rgb(182, 169, 168);
+    }
+}

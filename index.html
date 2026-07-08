@@ -9,28 +9,17 @@
       href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Cabin:ital,wght@0,400..700;1,400..700&family=Google+Sans+Code:ital,wght,MONO@0,300..800,1;1,300..800,1&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Press+Start+2P&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap"
       rel="stylesheet"
     />
-    <title>iPOTS Reminder App - 2026</title>
+    <title>iPOTS Swimming Reminder App - 2026</title>
     <link rel="shortcut icon" href="iPOTS-logo.png" />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="loader">
-      <div id="loader-title">iPOTS Swimming Reminder App</div>
-      <div id="loader-developers">Developed By: Amanjot.S and Jonathan.F</div>
-      <br />
-      <img src="loader-logo.png" height="100" width="100" />
-      <img src="loader-gif.gif" height="400" width="550" />
-      <div id="loader-quote">
-        The water is your friend... you don't have to fight with water, just
-        share the same spirit as the water, and it will help you move." -
-        Alexandr Popov
-      </div>
-      <br />
-      <div id="loader-model">Version Model: v.2026/iPOTS</div>
+    <div class="quote-box">
+      <div id="word-quote-box">"Progress is not linear."</div>
     </div>
     <form>
       <label id="day-number">📅 Day #1</label>
-      <input min="2026-05-25" type="date" id="calendar" value="" />
+      <input min="2026-05-25" type="date" id="calendar" value="" readonly />
       <br />
       <br />
       <label id="word-total-distance">🏊🏻‍♀️ Total Distance:</label>
@@ -62,6 +51,229 @@
       <input type="button" id="submit" value="✅ Submit" />
       <input type="button" id="reset" value="🔄 Reset" onclick="alarmReset()" />
     </form>
+    <h3 id="word-challenges">Challenges</h3>
+    <div class="challenges">
+        <div class="carousel">
+            <div class="group">
+                <div class="card"> 
+                    <div id="alberta">
+                        Alberta
+                         <br />
+                       <input type="text" id="alberta-trips" readonly value="0" /> %
+                    </div>
+                </div>
+                <div class="card">
+                    <div id="british-columbia">
+                        British Columbia
+                        <br />
+                        <input type="text" id="british-columbia-trips" readonly value="0" /> %
+                    </div>
+                </div>
+                <div class="card">
+                    <div id="manitoba">
+                        Manitoba
+                        <br />
+                        <input type="text" id="manitoba-trips" readonly value="0" /> %
+                    </div>
+                </div>
+                <div class="card">
+                    <div id="new-brunswick">
+                        New Brunswick
+                        <br />
+                        <input type="text" id="new-brunswick-trips" readonly value="0" /> %
+                    </div>
+                </div>
+                <div class="card">
+                    <div id="newfoundland-and-labrador">
+                        Newfoundland and Labrador
+                        <br />
+                        <input type="text" id="newfoundland-and-labrador-trips" readonly value="0" /> %
+                    </div>
+                </div>
+                <div class="card">
+                    <div id="nova-scotia">
+                        Nova Scotia
+                        <br />
+                        <input type="text" id="nova-scotia-trips" readonly value="0" /> %
+                    </div>
+                </div>
+                <div class="card">
+                    <div id="ontario">
+                        Ontario
+                        <br />
+                        <input type="text" id="ontario-trips" readonly value="0" /> %
+                    </div>
+                </div>
+                <div class="card">
+                    <div id="prince-edward-island">
+                        Prince Edward Island
+                        <br />
+                        <input type="text" id="prince-edward-island-trips" readonly value="0" /> %
+                    </div>
+                </div>
+                <div class="card">
+                    <div id="quebec">
+                        Quebec
+                        <br />
+                        <input type="text" id="quebec-trips" readonly value="0" /> %
+                    </div>
+                </div>
+                <div class="card">
+                    <div id="saskatchewan">
+                        Saskatchewan
+                        <br />
+                        <input type="text" id="saskatchewan-trips" readonly value="0" /> %
+                    </div>
+                </div>
+            </div>
+         <div class="group" aria-hidden="true">               
+                <div class="card"> 
+                    <div id="alberta">
+                        Alberta    
+                         <br />
+                       <input type="text" id="alberta-trips2" readonly value="0" /> %
+                    </div>
+                </div>
+                <div class="card">
+                    <div id="british-columbia">
+                        British Columbia
+                        <br />
+                        <input type="text" id="british-columbia-trips2" readonly value="0" /> %
+                    </div>
+                </div>
+                <div class="card">
+                    <div id="manitoba">
+                        Manitoba
+                        <br />
+                        <input type="text" id="manitoba-trips2" readonly value="0" /> %
+                    </div>
+                </div>
+                <div class="card">
+                    <div id="new-brunswick">
+                        New Brunswick
+                        <br />
+                        <input type="text" id="new-brunswick-trips2" readonly value="0" /> %
+                    </div>
+                </div>
+                <div class="card">
+                    <div id="newfoundland-and-labrador">
+                        Newfoundland and Labrador
+                        <br />
+                        <input type="text" id="newfoundland-and-labrador-trips2" readonly value="0" /> %
+                    </div>
+                </div>
+                <div class="card">
+                    <div id="nova-scotia">
+                        Nova Scotia
+                        <br />
+                        <input type="text" id="nova-scotia-trips2" readonly value="0" /> %
+                    </div>
+                </div>
+                <div class="card">
+                    <div id="ontario">
+                        Ontario
+                        <br />
+                        <input type="text" id="ontario-trips2" readonly value="0" /> %
+                    </div>
+                </div>
+                <div class="card">
+                    <div id="prince-edward-island">
+                        Prince Edward Island
+                        <br />
+                        <input type="text" id="prince-edward-island-trips2" readonly value="0" /> %
+                    </div>
+                </div>
+                <div class="card">
+                    <div id="quebec">
+                        Quebec
+                        <br />
+                        <input type="text" id="quebec-trips2" readonly value="0" /> %
+                    </div>
+                </div>
+                <div class="card">
+                    <div id="saskatchewan">
+                        Saskatchewan
+                        <br />
+                        <input type="text" id="saskatchewan-trips2" readonly value="0" /> %
+                    </div>
+                    </div>
+                </div>
+            </div> 
+        </div> 
+    </div>
+    <h3 id="word-weekly-snapshot">Weekly Snapshot</h3>
+        <div class="carousel-weekly-snapshot">
+            <div class ="group-weekly-snapshot">
+                <div class ="card-weekly-snapshot">
+                    <div id="active-duration">
+                    ⏱️ Active Duration
+                    <br />
+                    <br />
+                    Total: <input type="text" id="active-duration-percentage" readonly value="0"/>h
+                    <br />
+                    <br />
+                    Total time spent in the water!
+                    </div>
+                </div> 
+                <div class ="card-weekly-snapshot">
+                    <div id="sessions">
+                    📋 Sessions
+                    <br />
+                    <br />
+                    Total: <input type="text" id="session-number" readonly value="0"/> # 
+                    <br />
+                    <br />
+                    Total number of sessions completed!
+                    </div>
+                </div>
+                <div class ="card-weekly-snapshot">
+                    <div id="calorie-burn">
+                    🔥 Calorie Burn
+                    <br />
+                    <br />
+                    Total: <input type="text" id="calorie-burnt" readonly value="0"/> cal
+                    <br />
+                    <br />
+                    Total number of calories burned!
+                    </div>
+                </div>
+            </div>
+            <div class="group-weekly-snapshot" aria-hidden="true">    
+                   <div class ="card-weekly-snapshot">
+                    <div id="active-duration">
+                    ⏱️ Active Duration
+                    <br />
+                    <br />
+                    Total: <input type="text" id="active-duration-percentage" readonly value="0"/>h
+                    <br />
+                    <br />
+                    Total time spent in the water!
+                    </div>
+                </div> 
+                <div class ="card-weekly-snapshot">
+                    <div id="sessions">
+                    📋 Sessions
+                    <br />
+                    <br />
+                    Total: <input type="text" id="session-number2" readonly value="0"/> # 
+                    <br />
+                    <br />
+                    Total number of sessions completed!
+                    </div>
+                </div>
+                <div class ="card-weekly-snapshot">
+                    <div id="calorie-burn">
+                    🔥 Calorie Burn
+                    <br />
+                    <br />
+                    Total: <input type="text" id="calorie-burnt" readonly value="0"/> cal
+                    <br />
+                    <br />
+                    Total number of calories burned!
+                    </div>
+                </div>
+            </div>
+        </div>
     <div class="container-footer">
       <h3 id="word-contact-us">Contact Us</h3>
       <p id="word-email" onclick="openEmail()">
@@ -105,10 +317,9 @@
       />
     </div>
     <div class="bottom-bar">
-      <p id="company-rights">&copy; 2026 company. All rights reserved</p>
-    </div>
-    <div class="quote-box">
-      <div id="word-quote-box">"Progress is not linear."</div>
+      <p id="company-rights" style="color: white">
+        &copy; 2026 company. All rights reserved
+      </p>
     </div>
     <script src="function.js"></script>
   </body>

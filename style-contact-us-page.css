@@ -1,0 +1,181 @@
+/* HTML Components */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url("login-page-background.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-style: normal;
+    overflow-x: hidden;
+    animation-name: fadeIn;
+    animation-duration: 6s;
+    animation-delay: 0s;
+    animation-fill-mode: forwards;
+    animation-play-state: running;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+    color: rgb(28, 60, 101);
+}
+
+/* HTML Classes */ 
+.container {
+    width: 400px;
+    height: 515px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    border-top: none;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 30px;
+    animation-name: borderEffect;
+    animation-timing-function: ease-in-out;
+    animation-delay: 5s;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+} 
+
+/* HTML IDs */
+#name, #email, #subject, #message {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 25px;
+    border-radius: 10px;
+    border-top: none;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+#phone-details, #email-details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    width: 230px;
+    height: 70px;
+}
+
+#social-details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    text-align: center;
+    color: white;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    width: 230px;
+    height: 70px;
+}
+
+#send {
+    height: 25px;
+    width: 150px;
+    color: white;
+    font-style: normal;
+    font-size: 15px;
+    font-weight: 700;
+    background-color: rgb(15, 192, 252);
+    border-radius: 20px;
+    border-top: none;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+}
+
+#information-details {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    margin-top: 30px;
+}
+
+#footer-details {
+    justify-content: center;
+    color: black;
+    display: flex;
+    text-align: center;
+    margin-top: 40px;
+}
+
+#name-word:hover, #email-word:hover, #subject-word:hover, #message-word:hover, #contact-us-word:hover, #socials-word:hover, #phone-word:hover, #email-word:hover, #privacy-policy-word:hover, #terms-of-use-word:hover, #disclaimer-word:hover {
+    text-decoration-line: underline;
+}
+
+#contact-us-page-logo:hover, #instagram-picture:hover, #tiktok-picture:hover, #twitter-picture:hover {
+    transform: scale(1.1);
+}
+
+#phone-number:hover, #email-address:hover {
+    transform: scale(1.025);
+}
+
+#send:active, #instagram-picture:active, #twitter-picture:active, #tiktok-picture:active, #phone-number:active, #email-address:active {
+    transform: translateY(1px);
+}
+
+#send:hover {
+    background-color: rgba(5, 5, 36, 0.7);
+}
+
+/* HTML Pseudo-Element Notation */ 
+input::placeholder {
+    color: white;
+    font-style: normal;
+    font-weight: 450;
+    text-align: center;
+}
+
+input[type="text"] {
+    color: white;
+    text-align: center;
+}
+
+/* HTML @keyframes Animations */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes borderEffect {
+    0% {
+        box-shadow: 0px 0px 15px 15px rgb(2, 89, 148);
+    }
+    25% {
+        box-shadow: 0px 0px 15px 15px rgb(23, 37, 49);
+    }   
+    50% {
+        box-shadow: 0px 0px 15px 15px rgb(91, 47, 33);
+    }
+    75% {
+        box-shadow: 0px 0px 15px 15px rgb(13, 4, 5);
+    }
+    100% {
+        box-shadow: 0px 0px 15px 15px rgb(182, 169, 168);
+    }
+}

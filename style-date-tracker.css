@@ -1,0 +1,135 @@
+/* HTML Components */
+body {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    background-image: url("login-page-background.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-style: normal;
+    animation-name: fadeIn;
+    animation-duration: 6s;
+    animation-delay: 0s;
+    animation-fill-mode: forwards;
+    animation-play-state: running;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out; 
+}
+
+h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 5px;
+}
+
+/* HTML Classes */ 
+.container {
+    width: 800px;
+    height: 410px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    border-top: none;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    animation-name: borderEffect;
+    animation-timing-function: ease-in-out;
+    animation-delay: 5s;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+    margin-top: 65px;
+}
+
+/* HTML IDs */
+#km-today, #km-yesterday, #km-this-week, #km-this-month, #km-this-year {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 150px;
+    height: 100px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    border-top: none;
+    border-bottom: none;
+    border-right: none;
+    border-left: none;
+    gap: 2px;
+}
+
+#date-tracker-logo {
+    margin-right: 35px;
+}
+
+#word-km-today, #word-km-yesterday, #word-km-this-week, #word-km-this-month, #word-km-this-year {
+    font-size: 13px;       
+    text-align: center;
+}
+
+#footer-details {
+    justify-content: center;
+    color: white;
+    display: flex;
+    text-align: center;
+    margin-top: 70px;
+}
+
+#today-collector, #yesterday-collector, #week-collector, #month-collector, #year-collector {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 25px;
+    text-align: center;
+    border-radius: 10px;
+    border-top: none;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+/* HTML Pseudo-Element Notation */ 
+input[type="text"] {
+    color: white;
+}
+
+/* HTML @keyframes Animations */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes borderEffect {
+    0% {
+        box-shadow: 0px 0px 15px 15px rgb(2, 89, 148);
+    }
+    25% {
+        box-shadow: 0px 0px 15px 15px rgb(23, 37, 49);
+    }   
+    50% {
+        box-shadow: 0px 0px 15px 15px rgb(91, 47, 33);
+    }
+    75% {
+        box-shadow: 0px 0px 15px 15px rgb(13, 4, 5);
+    }
+    100% {
+        box-shadow: 0px 0px 15px 15px rgb(182, 169, 168);
+    }
+}
