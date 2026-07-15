@@ -23,24 +23,16 @@ body {
     overflow-y: visible;
 }
 
-h1 {
-    text-align: center;
-}
-
-h4 {
-    text-align: center;
-    margin-top: -5px;
-    font-size: 20px;
-    font-weight: 600;
-}
-
 /* HTML Classes */ 
 .container {
     width: 360px;
-    height: 695px;
+    height: 820px;
     background-color: white;
     border-radius: 20px;
-    border: none;
+    border-top: none;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -54,11 +46,33 @@ h4 {
 }
 
 /* HTML IDs */
-#every-try-counts {
-    color: rgb(178, 58, 58);
+#disability-option, #parent-caregiver-option, #supporter-option, #club-coach-option, #education-option, #organization-option {
+    width: 324px;
+    height: 56px;
+    font-size: 18px;
+    display: flex;
+    text-align: left;
+    justify-content: center;
+    align-items: center;
+    border-top: none;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+    background: #eff0f2;
+    color: rgb(28, 60, 101);
+    font-weight: 600;
+    border-radius: 16px;
 }
 
-#get-started {
+#disability-option:hover, #parent-caregiver-option:hover, #supporter-option:hover, #club-coach-option:hover, #education-option:hover, #education-option:hover, #organization-option:hover {
+    background: rgba(0, 0, 0, 0.3);
+}
+
+#disability-option:active, #parent-caregiver-option:active, #supporter-option:active, #club-coach-option:active, #education-option:active, #organization-option:active {
+    transform: translateY(1px);
+}
+
+#continue {
     height: 56px;
     width: 324px;
     color: white;
@@ -68,19 +82,47 @@ h4 {
     text-align: center;
     background-color: rgb(15, 192, 252);
     border-radius: 28px;
-    border: none;
+    border-top: none;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
 }
 
-#welcome-page-logo:hover, #map-of-canada-picture:hover {
-    transform: scale(1.1);
+.clicked-black {
+    background-color: black;
 }
 
-#the-great-canadian-swim-word:hover, #every-try-counts:hover, #every-ripple-matters:hover, #footer-details:hover {
+#about-you-word {
+    margin-bottom: -10px;
+}
+
+#about-you-logo:hover {
+    transform: scale(1.1);  
+}
+
+#continue:hover {
+    background-color: rgba(5, 5, 36 , 0.7);
+}
+
+#description {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+#about-you-word:hover, #description:hover, #footer-details:hover {
     text-decoration-line: underline;
 }
 
-#get-started:hover {
-    background-color: rgba(5, 5, 36 , 0.7);
+#footer-details {
+    color: rgb(28, 60, 101);
+    text-align: center;
+}
+
+/* HTML Pseudo-Element Notation */ 
+input[type="button"] {
+    color: black;
+    text-align: center;
 }
 
 /* HTML @keyframes Animations */

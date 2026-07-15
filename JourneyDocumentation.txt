@@ -180,29 +180,29 @@ Day 15 - Saturday, 27 June
 - Deleted old GitHub repository under this app because VS Code Terminal was having issues in sending commands to GitHub repository.
 - Made GitHub repository public and gave tags to finalize this efficient workflow between VS Code and GitHub.
 
-Day 16 - Monday, 29 June (Challenges) - Jonathan
-- Decided to implement a Challenge feature for further user encouragement and to create more achievable goals throughout their journey, making the overall goal of traveling the distance across Canada feel less intimidating
-- Conclusion that each challenge should be big but leads to the distance across Canada, finalizing on each goal being the percentage of distance across each province
-- Through research, we found the approximate distance across each province from east to west and declared them as const variables in the Javascript file
-- With quick mathematical skills it was determined that to find the percentage we must take the value of myTotal, divide it by the provinces const variable and multiply it by 100 for the percentage
-- During testing, it became apparent that the number of digits being shown was too many decimal palaces, so the .toFixed(3) method was added to round all values to 3 decimal places
-- In addition, to create more interaction an alert pop-up would show on screen when the distance reached above 100% of the provinces distance (km)
-- However, through a final test of bug fixes it was discovered that after the distance exceeded 100%, the notification/alert message would appear at each entry, so such event must be restricted
-- Thus an additional requirement was placed in the if statement and the addition of a storage variable for each province function, where if the value of such storage exceeded 0 (no pop-up has been shown), then the alert would not appear
-- Final within in said if statement, the value of the percentage was set to and would remain at 100% to showcase the achievement has been completed
+Day 16 - Monday, 29 June 
+- Decided to implement a Challenge feature for further user encouragement and to create more achievable goals throughout their journey, making the overall goal of traveling the distance across Canada feel less intimidating.
+- Conclusion that each challenge should be big but leads to the distance across Canada, finalizing on each goal being the percentage of distance across each province.
+- Through research, we found the approximate distance across each province from east to west and declared them as const variables in the Javascript file.
+- With quick mathematical skills it was determined that to find the percentage we must take the value of myTotal, divide it by the provinces const variable and multiply it by 100 for the percentage.
+- During testing, it became apparent that the number of digits being shown was too many decimal palaces, so the .toFixed(3) method was added to round all values to 3 decimal places.
+- In addition, to create more interaction an alert pop-up would show on screen when the distance reached above 100% of the provinces distance (km).
+- However, through a final test of bug fixes it was discovered that after the distance exceeded 100%, the notification/alert message would appear at each entry, so such event must be restricted.
+- Thus an additional requirement was placed in the if statement and the addition of a storage variable for each province function, where if the value of such storage exceeded 0 (no pop-up has been shown), then the alert would not appear.
+- Final within in said if statement, the value of the percentage was set to and would remain at 100% to showcase the achievement has been completed.
 
-Day 17 - Tuesday, 30 June (Weekly Snapshot) - Jonathan
-- Similarly to the Challenges feature, the Weekly Snapshot feature was added to create more interactions, showcase progress for future motivation and to see how far you have come
-- The Snapshot showcase three significant trackers that were decided, including total time (hours) spent in water, total sessions completed and total calories burnt
-- To make it more virtually appealing and modern an emoji was placed right beside
-- In addition, we also completed the calculation for the session counter, which simply tied to the clicking of the submit button
-- After a round of testing a bug was discovered, where the session counter would increase when no value (zero) was placed in the myDistance box, this was fixed through the addition of an if statement making sure the value is greater than a zero
-- Lastly an alert was added to tell the user that no input (input of zero) was housed in the variable and an actual value needed to be given
-- While the other two parts of the Weekly Snapshot were not completed, we determined that further input would need to be added to the interface on a later date, for adding hours and trying to calculate calories burnt (height, weight, etc)
+Day 17 - Tuesday, 30 June 
+- Similarly to the Challenges feature, the Weekly Snapshot feature was added to create more interactions, showcase progress for future motivation and to see how far you have come.
+- The Snapshot showcase three significant trackers that were decided, including total time (hours) spent in water, total sessions completed and total calories burnt.
+- To make it more virtually appealing and modern an emoji was placed right beside.
+- In addition, we also completed the calculation for the session counter, which simply tied to the clicking of the submit button.
+- After a round of testing a bug was discovered, where the session counter would increase when no value (zero) was placed in the myDistance box, this was fixed through the addition of an if statement making sure the value is greater than a zero.
+- Lastly an alert was added to tell the user that no input (input of zero) was housed in the variable and an actual value needed to be given.
+- While the other two parts of the Weekly Snapshot were not completed, we determined that further input would need to be added to the interface on a later date, for adding hours and trying to calculate calories burnt (height, weight, etc).
 
-Day 18 - Wednesday, 1 July (Calendar Update Feature/Layout Fix/Commented/Arranged Meeting Dates) - Amanjot
+Day 18 - Wednesday, 1 July
 
-Day 19 - Thursday, 2 July (Carousel) - Jonathan
+Day 19 - Thursday, 2 July 
 - Due to the large scale of the Challenge box in a straight line (10 big boxes for each province), the screen was forced to be shrunken down, looking confusing and less modern
 - Through the use of research a modern fix that was determined was the use an infinite carousel would be a suitable solution
 - After studying a video tutorial and understanding the carousel’s implementation, an infinite carousel was successfully placed in the application
@@ -211,4 +211,14 @@ Day 19 - Thursday, 2 July (Carousel) - Jonathan
 - After many bug test it was discovered that if the user manually dragged the carousel it would break the infinite carousel animation, so a overflow: hidden; was added to prevent manual interaction
 - Finally, a mask-image: linear-gradient(to right, rgba(0, 0, 0, 1) 90%, rgba(0, 0, 0, 0) 100%); was added to the screen to create a blend/fade in effect when the card was moving off screen, giving a more modern look
 
-Day 20 - Friday, 3 July (Login Page) - Amanjot
+Day 20 - Friday, 3 July
+
+Day 21 - Saturday, 4 July
+
+Day 22 - Sunday, 5 July
+
+Day 23 - Monday, 6 July
+
+Day 24 - Tuesday, 7 July
+
+Day 25 - Wednesday, 8 July

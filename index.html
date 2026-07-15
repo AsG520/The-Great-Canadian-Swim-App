@@ -1,326 +1,40 @@
-<!doctype html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Cabin:ital,wght@0,400..700;1,400..700&family=Google+Sans+Code:ital,wght,MONO@0,300..800,1;1,300..800,1&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Press+Start+2P&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap"
       rel="stylesheet"
     />
-    <title>iPOTS Swimming Reminder App - 2026</title>
     <link rel="shortcut icon" href="iPOTS-logo.png" />
-    <link rel="stylesheet" href="style.css" />
+    <title>Home Page: iPOTS Swimming Reminder App - 2026</title>
   </head>
   <body>
-    <div class="quote-box">
-      <div id="word-quote-box">"Progress is not linear."</div>
-    </div>
-    <form>
-      <label id="day-number">📅 Day #1</label>
-      <input min="2026-05-25" type="date" id="calendar" value="" readonly />
-      <br />
-      <br />
-      <label id="word-total-distance">🏊🏻‍♀️ Total Distance:</label>
-      <br />
-      <input
-        type="number"
-        min="0"
-        id="total-distance"
-        maxlength="10"
-        value="Enter Distance in (km)"
-      />
-      <br />
-      <br />
-      <label id="word-my-total">📈 My Total:</label>
-      <br />
-      <input
-        type="text"
-        id="my-total"
-        value="Total Distance in (km)"
-        readonly
-      />
-      <br />
-      <br />
-      <label id="word-trips-canada">🍁 # of Trips Across Canada</label>
-      <br />
-      <input type="text" id="number-trips" readonly />
-      <br />
-      <br />
-      <input type="button" id="submit" value="✅ Submit" />
-      <input type="button" id="reset" value="🔄 Reset" onclick="alarmReset()" />
-    </form>
-    <h3 id="word-challenges">Challenges</h3>
-    <div class="challenges">
-        <div class="carousel">
-            <div class="group">
-                <div class="card"> 
-                    <div id="alberta">
-                        Alberta
-                         <br />
-                       <input type="text" id="alberta-trips" readonly value="0" /> %
-                    </div>
-                </div>
-                <div class="card">
-                    <div id="british-columbia">
-                        British Columbia
-                        <br />
-                        <input type="text" id="british-columbia-trips" readonly value="0" /> %
-                    </div>
-                </div>
-                <div class="card">
-                    <div id="manitoba">
-                        Manitoba
-                        <br />
-                        <input type="text" id="manitoba-trips" readonly value="0" /> %
-                    </div>
-                </div>
-                <div class="card">
-                    <div id="new-brunswick">
-                        New Brunswick
-                        <br />
-                        <input type="text" id="new-brunswick-trips" readonly value="0" /> %
-                    </div>
-                </div>
-                <div class="card">
-                    <div id="newfoundland-and-labrador">
-                        Newfoundland and Labrador
-                        <br />
-                        <input type="text" id="newfoundland-and-labrador-trips" readonly value="0" /> %
-                    </div>
-                </div>
-                <div class="card">
-                    <div id="nova-scotia">
-                        Nova Scotia
-                        <br />
-                        <input type="text" id="nova-scotia-trips" readonly value="0" /> %
-                    </div>
-                </div>
-                <div class="card">
-                    <div id="ontario">
-                        Ontario
-                        <br />
-                        <input type="text" id="ontario-trips" readonly value="0" /> %
-                    </div>
-                </div>
-                <div class="card">
-                    <div id="prince-edward-island">
-                        Prince Edward Island
-                        <br />
-                        <input type="text" id="prince-edward-island-trips" readonly value="0" /> %
-                    </div>
-                </div>
-                <div class="card">
-                    <div id="quebec">
-                        Quebec
-                        <br />
-                        <input type="text" id="quebec-trips" readonly value="0" /> %
-                    </div>
-                </div>
-                <div class="card">
-                    <div id="saskatchewan">
-                        Saskatchewan
-                        <br />
-                        <input type="text" id="saskatchewan-trips" readonly value="0" /> %
-                    </div>
-                </div>
-            </div>
-         <div class="group" aria-hidden="true">               
-                <div class="card"> 
-                    <div id="alberta">
-                        Alberta    
-                         <br />
-                       <input type="text" id="alberta-trips2" readonly value="0" /> %
-                    </div>
-                </div>
-                <div class="card">
-                    <div id="british-columbia">
-                        British Columbia
-                        <br />
-                        <input type="text" id="british-columbia-trips2" readonly value="0" /> %
-                    </div>
-                </div>
-                <div class="card">
-                    <div id="manitoba">
-                        Manitoba
-                        <br />
-                        <input type="text" id="manitoba-trips2" readonly value="0" /> %
-                    </div>
-                </div>
-                <div class="card">
-                    <div id="new-brunswick">
-                        New Brunswick
-                        <br />
-                        <input type="text" id="new-brunswick-trips2" readonly value="0" /> %
-                    </div>
-                </div>
-                <div class="card">
-                    <div id="newfoundland-and-labrador">
-                        Newfoundland and Labrador
-                        <br />
-                        <input type="text" id="newfoundland-and-labrador-trips2" readonly value="0" /> %
-                    </div>
-                </div>
-                <div class="card">
-                    <div id="nova-scotia">
-                        Nova Scotia
-                        <br />
-                        <input type="text" id="nova-scotia-trips2" readonly value="0" /> %
-                    </div>
-                </div>
-                <div class="card">
-                    <div id="ontario">
-                        Ontario
-                        <br />
-                        <input type="text" id="ontario-trips2" readonly value="0" /> %
-                    </div>
-                </div>
-                <div class="card">
-                    <div id="prince-edward-island">
-                        Prince Edward Island
-                        <br />
-                        <input type="text" id="prince-edward-island-trips2" readonly value="0" /> %
-                    </div>
-                </div>
-                <div class="card">
-                    <div id="quebec">
-                        Quebec
-                        <br />
-                        <input type="text" id="quebec-trips2" readonly value="0" /> %
-                    </div>
-                </div>
-                <div class="card">
-                    <div id="saskatchewan">
-                        Saskatchewan
-                        <br />
-                        <input type="text" id="saskatchewan-trips2" readonly value="0" /> %
-                    </div>
-                    </div>
-                </div>
-            </div> 
-        </div> 
-    </div>
-    <h3 id="word-weekly-snapshot">Weekly Snapshot</h3>
-        <div class="carousel-weekly-snapshot">
-            <div class ="group-weekly-snapshot">
-                <div class ="card-weekly-snapshot">
-                    <div id="active-duration">
-                    ⏱️ Active Duration
-                    <br />
-                    <br />
-                    Total: <input type="text" id="active-duration-percentage" readonly value="0"/>h
-                    <br />
-                    <br />
-                    Total time spent in the water!
-                    </div>
-                </div> 
-                <div class ="card-weekly-snapshot">
-                    <div id="sessions">
-                    📋 Sessions
-                    <br />
-                    <br />
-                    Total: <input type="text" id="session-number" readonly value="0"/> # 
-                    <br />
-                    <br />
-                    Total number of sessions completed!
-                    </div>
-                </div>
-                <div class ="card-weekly-snapshot">
-                    <div id="calorie-burn">
-                    🔥 Calorie Burn
-                    <br />
-                    <br />
-                    Total: <input type="text" id="calorie-burnt" readonly value="0"/> cal
-                    <br />
-                    <br />
-                    Total number of calories burned!
-                    </div>
-                </div>
-            </div>
-            <div class="group-weekly-snapshot" aria-hidden="true">    
-                   <div class ="card-weekly-snapshot">
-                    <div id="active-duration">
-                    ⏱️ Active Duration
-                    <br />
-                    <br />
-                    Total: <input type="text" id="active-duration-percentage" readonly value="0"/>h
-                    <br />
-                    <br />
-                    Total time spent in the water!
-                    </div>
-                </div> 
-                <div class ="card-weekly-snapshot">
-                    <div id="sessions">
-                    📋 Sessions
-                    <br />
-                    <br />
-                    Total: <input type="text" id="session-number2" readonly value="0"/> # 
-                    <br />
-                    <br />
-                    Total number of sessions completed!
-                    </div>
-                </div>
-                <div class ="card-weekly-snapshot">
-                    <div id="calorie-burn">
-                    🔥 Calorie Burn
-                    <br />
-                    <br />
-                    Total: <input type="text" id="calorie-burnt" readonly value="0"/> cal
-                    <br />
-                    <br />
-                    Total number of calories burned!
-                    </div>
-                </div>
-            </div>
-        </div>
-    <div class="container-footer">
-      <h3 id="word-contact-us">Contact Us</h3>
-      <p id="word-email" onclick="openEmail()">
-        📧 Email: <br />steffimanica@gmail.com
-      </p>
-      <p id="word-phone" onclick="openNumber()">
-        📞 Phone: <br />+1 (416) 550-9762
-      </p>
-      <p id="word-address" onclick="openAddress()">
-        🌎 Address: <br />Mississauga RPO Dundas Clayhill<br />
-      </p>
-    </div>
-    <div class="online-map">
-      <iframe
-        src="https://embed.waze.com/iframe?zoom=16&lat=43.570553&lon=-79.627667&ct=livemap"
-        height="75"
-        width="250"
-        allowfullscreen
-      >
-      </iframe>
-    </div>
-    <div class="footer-content">
-      <h3 id="word-follow-us">Follow Us</h3>
+    <div class="container">
       <img
-        src="instagram-logo.png"
-        id="instagram-picture"
-        alt="Instagram"
-        onclick="alertInstagram()"
+        src="loader-logo.png"
+        width="120"
+        height="100"
+        id="welcome-page-logo"
       />
+      <h1 id="the-great-canadian-swim-word">The<br />Great Canadian Swim</h1>
+      <h4>
+        <span id="every-try-counts">Every Try Counts.</span><br /><span
+          id="every-ripple-matters"
+          >Every Ripple Matters.</span
+        >
+      </h4>
       <img
-        src="tiktok-logo.png"
-        id="tiktok-picture"
-        alt="TikTok"
-        onclick="alertTiktok()"
+        src="map-of-canada.png"
+        width="350"
+        height="280"
+        id="map-of-canada-picture"
       />
-      <img
-        src="twitter-logo.png"
-        id="twitter-picture"
-        alt="Twitter"
-        onclick="alertTwitter()"
-      />
+      <button id="get-started">Get Started</button>
     </div>
-    <div class="bottom-bar">
-      <p id="company-rights" style="color: white">
-        &copy; 2026 company. All rights reserved
-      </p>
-    </div>
+    <br />
+    <div id="footer-details">Privacy Policy / Terms of Use / Disclaimer</div>
     <script src="function.js"></script>
   </body>
 </html>

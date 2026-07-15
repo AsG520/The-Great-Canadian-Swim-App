@@ -11,7 +11,8 @@ body {
     font-family: 'Montserrat';
     font-weight: 700;
     font-style: normal;
-    overflow-x: hidden;
+    overflow-x: visible;
+    overflow-y: visible;
     animation-name: fadeIn;
     animation-duration: 6s;
     animation-delay: 0s;
@@ -24,9 +25,9 @@ body {
 
 /* HTML Classes */ 
 .container {
-    width: 400px;
-    height: 515px;
-    background-color: rgba(255, 255, 255, 0.5);
+    width: 360px;
+    height: 705px;
+    background-color: white;
     border-radius: 20px;
     border-top: none;
     border-bottom: none;
@@ -46,18 +47,40 @@ body {
 } 
 
 /* HTML IDs */
-#name, #email, #subject, #message {
+#name, #email, #subject {
+    width: 324px;
+    height: 56px;
+    font-size: 18px;
     display: flex;
+    text-align: left;
     justify-content: center;
     align-items: center;
-    width: 250px;
-    height: 25px;
-    border-radius: 10px;
     border-top: none;
     border-bottom: none;
     border-left: none;
     border-right: none;
-    background: rgba(0, 0, 0, 0.5);
+    background: #eff0f2;
+    color: rgb(28, 60, 101);
+    font-weight: 600;
+    border-radius: 16px;
+}
+
+#message {
+    width: 324px;
+    height: 56px;
+    font-size: 18px;
+    display: flex;
+    text-align: left;
+    justify-content: center;
+    align-items: center;
+    border-top: none;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+    background: #eff0f2;
+    color: rgb(28, 60, 101);
+    font-weight: 600;
+    border-radius: 16px;
 }
 
 #phone-details, #email-details {
@@ -66,11 +89,17 @@ body {
     align-items: center;
     flex-direction: column;
     text-align: center;
-    color: white;
-    background: rgba(0, 0, 0, 0.5);
+    color: rgb(28, 60, 101);
+    background-color: white;
     border-radius: 20px;
     width: 230px;
     height: 70px;
+    animation-name: borderEffect;
+    animation-timing-function: ease-in-out;
+    animation-delay: 5s;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
 }
 
 #social-details {
@@ -79,22 +108,29 @@ body {
     align-items: center;
     flex-direction: row;
     text-align: center;
-    color: white;
-    background: rgba(0, 0, 0, 0.5);
+    color: rgb(28, 60, 101);
+    background-color: white;
     border-radius: 20px;
     width: 230px;
     height: 70px;
+    animation-name: borderEffect;
+    animation-timing-function: ease-in-out;
+    animation-delay: 5s;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
 }
 
 #send {
-    height: 25px;
-    width: 150px;
+    height: 56px;
+    width: 324px;
     color: white;
     font-style: normal;
-    font-size: 15px;
-    font-weight: 700;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
     background-color: rgb(15, 192, 252);
-    border-radius: 20px;
+    border-radius: 28px;
     border-top: none;
     border-bottom: none;
     border-left: none;
@@ -110,13 +146,18 @@ body {
 
 #footer-details {
     justify-content: center;
-    color: black;
+    color: rgb(28, 60, 101);
     display: flex;
     text-align: center;
-    margin-top: 40px;
 }
 
-#name-word:hover, #email-word:hover, #subject-word:hover, #message-word:hover, #contact-us-word:hover, #socials-word:hover, #phone-word:hover, #email-word:hover, #privacy-policy-word:hover, #terms-of-use-word:hover, #disclaimer-word:hover {
+#name-word, #email-word, #subject-word, #message-word {
+    text-align: left;
+    width: 324px;
+    margin-bottom: 6px;
+}
+
+#name-word:hover, #email-word-box:hover, #email-word:hover, #subject-word:hover, #message-word:hover, #contact-us-word:hover, #socials-word:hover, #phone-word:hover, #email-word:hover, #privacy-policy-word:hover, #terms-of-use-word:hover, #disclaimer-word:hover, #footer-details:hover {
     text-decoration-line: underline;
 }
 
@@ -126,6 +167,11 @@ body {
 
 #phone-number:hover, #email-address:hover {
     transform: scale(1.025);
+}
+
+#email-address, #phone-number {
+    text-decoration-line: none;
+    color: rgb(28, 60, 101);
 }
 
 #send:active, #instagram-picture:active, #twitter-picture:active, #tiktok-picture:active, #phone-number:active, #email-address:active {
@@ -138,10 +184,10 @@ body {
 
 /* HTML Pseudo-Element Notation */ 
 input::placeholder {
-    color: white;
-    font-style: normal;
-    font-weight: 450;
-    text-align: center;
+    color: rgb(28, 60, 101);
+    font-weight: 600;
+    font-size: 18px;
+    text-align: left;
 }
 
 input[type="text"] {
@@ -164,18 +210,18 @@ input[type="text"] {
 
 @keyframes borderEffect {
     0% {
-        box-shadow: 0px 0px 15px 15px rgb(2, 89, 148);
+        border: 5px solid rgb(28, 60, 101);
     }
     25% {
-        box-shadow: 0px 0px 15px 15px rgb(23, 37, 49);
+        border: 5px solid rgb(15, 192, 252);
     }   
     50% {
-        box-shadow: 0px 0px 15px 15px rgb(91, 47, 33);
+        border: 5px solid rgb(178, 58, 58);
     }
     75% {
-        box-shadow: 0px 0px 15px 15px rgb(13, 4, 5);
+        border: 5px solid rgb(0, 0, 0);
     }
     100% {
-        box-shadow: 0px 0px 15px 15px rgb(182, 169, 168);
+        border: 5px solid #F5F7F9;
     }
 }

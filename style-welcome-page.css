@@ -23,24 +23,26 @@ body {
     overflow-y: visible;
 }
 
-h1 {
-    text-align: center;
-}
-
 h4 {
     text-align: center;
-    margin-top: -5px;
     font-size: 20px;
     font-weight: 600;
+}
+
+h1 {
+    margin-bottom: -10px; 
 }
 
 /* HTML Classes */ 
 .container {
     width: 360px;
-    height: 695px;
+    height: 735px;
     background-color: white;
     border-radius: 20px;
-    border: none;
+    border-top: none;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -53,12 +55,16 @@ h4 {
     animation-play-state: running;
 }
 
-/* HTML IDs */
-#every-try-counts {
-    color: rgb(178, 58, 58);
+.header-pictures {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin-top: -15px;
 }
 
-#get-started {
+/* HTML IDs */
+#sign-in, #create-an-account {
     height: 56px;
     width: 324px;
     color: white;
@@ -68,18 +74,43 @@ h4 {
     text-align: center;
     background-color: rgb(15, 192, 252);
     border-radius: 28px;
-    border: none;
+    border-top: none;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
 }
 
-#welcome-page-logo:hover, #map-of-canada-picture:hover {
-    transform: scale(1.1);
+#swim-across-canada-option, #build-community-option, #make-a-difference-option {
+    width: 324px;
+    height: 56px;
+    font-size: 18px;
+    display: flex;
+    text-align: left;
+    justify-content: center;
+    align-items: center;
+    border-top: none;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+    background: #eff0f2;
+    color: rgb(28, 60, 101);
+    font-weight: 600;
+    border-radius: 16px;
 }
 
-#the-great-canadian-swim-word:hover, #every-try-counts:hover, #every-ripple-matters:hover, #footer-details:hover {
+#map-of-canada-picture:hover, #welcome-page-logo:hover {
+    transform: scale(1.05);
+}
+
+#swim-across-canada-option:hover, #build-community-option:hover, #make-a-difference-option:hover {
+    background: rgba(0, 0, 0, 0.3);
+}
+
+h1:hover, h4:hover, #footer-details:hover {
     text-decoration-line: underline;
 }
 
-#get-started:hover {
+#create-an-account:hover, #sign-in:hover {
     background-color: rgba(5, 5, 36 , 0.7);
 }
 

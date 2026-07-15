@@ -2,8 +2,7 @@
 body {
     justify-content: center;
     align-items: center;
-    color: rgb(28, 60, 101);
-    display: flex;
+    display: flex; 
     flex-direction: column;
     background-image: url("login-page-background.png");
     background-repeat: no-repeat;
@@ -14,6 +13,7 @@ body {
     font-style: normal;
     animation-name: fadeIn;
     animation-duration: 6s;
+    color: rgb(28, 60, 101);
     animation-delay: 0s;
     animation-fill-mode: forwards;
     animation-play-state: running;
@@ -23,42 +23,37 @@ body {
     overflow-y: visible;
 }
 
-h1 {
-    text-align: center;
-}
-
-h4 {
-    text-align: center;
-    margin-top: -5px;
-    font-size: 20px;
-    font-weight: 600;
-}
-
 /* HTML Classes */ 
 .container {
     width: 360px;
-    height: 695px;
+    height: 800px;
     background-color: white;
     border-radius: 20px;
-    border: none;
+    border-top: none;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     animation-name: borderEffect;
     animation-timing-function: ease-in-out;
-    animation-delay: 7s;
-    animation-duration: 15s;
+    animation-delay: 5s;
+    animation-duration: 10s;
     animation-iteration-count: infinite;
     animation-play-state: running;
 }
 
-/* HTML IDs */
-#every-try-counts {
-    color: rgb(178, 58, 58);
+h1 {
+    text-align: center;
 }
 
-#get-started {
+h4 {
+    text-align: center;
+}
+
+#continue {
     height: 56px;
     width: 324px;
     color: white;
@@ -68,48 +63,8 @@ h4 {
     text-align: center;
     background-color: rgb(15, 192, 252);
     border-radius: 28px;
-    border: none;
-}
-
-#welcome-page-logo:hover, #map-of-canada-picture:hover {
-    transform: scale(1.1);
-}
-
-#the-great-canadian-swim-word:hover, #every-try-counts:hover, #every-ripple-matters:hover, #footer-details:hover {
-    text-decoration-line: underline;
-}
-
-#get-started:hover {
-    background-color: rgba(5, 5, 36 , 0.7);
-}
-
-/* HTML @keyframes Animations */
-@keyframes fadeIn {
-    0% {
-        opacity: 0;
-    }
-    50% {
-        opacity: 0.5;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-
-@keyframes borderEffect {
-    0% {
-        border: 5px solid rgb(28, 60, 101);
-    }
-    25% {
-        border: 5px solid rgb(15, 192, 252);
-    }   
-    50% {
-        border: 5px solid rgb(178, 58, 58);
-    }
-    75% {
-        border: 5px solid rgb(0, 0, 0);
-    }
-    100% {
-        border: 5px solid #F5F7F9;
-    }
+    border-top: none;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
 }

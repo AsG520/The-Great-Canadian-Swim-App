@@ -1,0 +1,368 @@
+/* HTML Components */
+body {
+    font-family: 'Montserrat';
+    display: flex; 
+    text-align: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    color: white;
+    font-style: normal;
+    font-weight: 600;
+    flex-direction: column;
+    background-color: rgb(13, 17, 23);
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+/* HTML Classes */ 
+.quote-box {
+    height: 25px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(5, 5, 36);
+    border-top: none;
+    border-bottom: none;
+    border-right: none;
+    border-left: none;
+    border-radius: 50px;
+    border-color: none;
+    font-weight: 600;
+    animation-name: fadeIn;
+    animation-duration: 3s;
+    animation-delay: 0s;
+    animation-play-state: running;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+}
+
+.challenges, .weekly-snapshot {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 30px;
+    color: white;
+    animation-name: fadeIn;
+    animation-timing-function: ease-in-out;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-play-state: running;
+    animation-delay: 0s;
+}
+
+.carousel {
+    margin-top: -25px;
+    width: 50%;
+    height: 150px;
+    border-top: none;
+    border-bottom: none;
+    border-right: none;
+    border-left: none;
+    display: flex;
+    overflow-x: auto;
+    align-items: center;
+}
+
+.carousel::-webkit-scrollbar {
+    display: none;
+}
+
+.carousel:hover .group {
+    animation-play-state: paused;
+}
+
+.group {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    height: 50px;
+    animation-name: spin;
+    animation-duration: 20s;
+    animation-direction: reverse;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    padding-right: 15px;
+}
+
+.card {
+    display: flex;
+    flex: 0 0 2px;
+    height: 90px;
+    width: 180px;
+    padding: 5px;
+    background: cornflowerblue;
+    font-size: 16px;
+    border-radius: 10px;
+    text-align: center;
+    align-items: center;
+}
+
+.card:hover {
+   transform: scale(1.1);
+}
+
+.carousel-weekly-snapshot {
+    margin-top: -25px;
+    margin: auto;
+    width: 45%;
+    height: 190px;
+    border-top: none;
+    border-bottom: none;
+    border-right: none;
+    border-left: none;
+    display: flex;
+    overflow-x: auto;
+    align-items: center;
+    overflow: hidden;
+    mask-image: linear-gradient(to right, rgba(0, 0, 0, 1) 90%, rgba(0, 0, 0, 0) 100%);
+}
+
+.carousel-weekly-snapshot::-webkit-scrollbar {
+    display: none;
+}
+
+.carousel-weekly-snapshot:hover .group-weekly-snapshot {
+    animation-play-state: paused;
+}
+
+.group-weekly-snapshot {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    height: 50px;
+    animation-name: spin2;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    padding-right: 15px;
+}
+
+.card-weekly-snapshot {
+    display: flex;
+    flex: 0 0 2px;
+    height: 160px;
+    width: 200px;
+    padding: 5px;
+    background: cornflowerblue;
+    font-size: 16px;
+    border-radius: 10px;
+    text-align: center;
+    align-items: center;
+}
+
+.card-weekly-snapshot:hover {
+   transform: scale(1.1);
+}
+
+.bottom-bar {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    animation-name: fadeIn;
+    animation-timing-function: ease-in-out;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-play-state: running;
+    animation-delay: 0s;
+}
+
+/* HTML IDs */
+#day-number, #word-trips-canada, #word-my-total, #word-total-distance {
+    animation-name: fadeIn;
+    animation-timing-function: ease-in-out;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-delay: 0s;
+    animation-play-state: running;
+}
+
+#my-total:active, #total-distance:active, #number-trips:active {
+    transform: translateY(2px);
+}
+
+#total-distance, #number-trips, #my-total {
+    height: 25px;
+    width: 150px;
+    text-align: center;
+    border-radius: 20px;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    border-bottom: none;
+    background-color: rgb(5, 5, 36);
+    color: white;
+    font-weight: 550;
+    animation-name: fadeIn;
+    animation-timing-function: ease-in-out;
+    animation-duration: 3s;
+    animation-play-state: running;
+    animation-iteration-count: 1;
+    animation-delay: 0s;
+    transform: translateY(5px);
+}
+
+#calendar {
+    border-radius: 10px;
+    border-top: none;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+    background-color: rgb(5, 5, 36);
+    color: white;
+    text-align: center;
+    animation-name: fadeIn;
+    animation-timing-function: ease-in-out;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-play-state: running;
+    animation-delay: 0s;
+    cursor: pointer;
+}
+
+#alberta-trips, #british-columbia-trips, #manitoba-trips, #new-brunswick-trips, #newfoundland-and-labrador-trips, #nova-scotia-trips, #ontario-trips, #prince-edward-island-trips, #quebec-trips, #saskatchewan-trips, #alberta-trips2, #british-columbia-trips2, #manitoba-trips2, #new-brunswick-trips2, #newfoundland-and-labrador-trips2, #nova-scotia-trips2, #ontario-trips2, #prince-edward-island-trips2, #quebec-trips2, #saskatchewan-trips2, #session-number, #active-duration-percentage, #calorie-burnt,#session-number2 {
+    width: 50px;
+    height: 15px;
+    text-align: center;
+    font-weight: 700;
+    font-style: normal;
+    border-top: none;
+    border-bottom: none;
+    border-right: none;
+    border-left: none;
+    border-radius: 10px;
+    background: linear-gradient(to right, #3498db, #2c3e50);
+    color: white;
+}
+
+#alberta, #british-columbia, #manitoba, #new-brunswick, #newfoundland-and-labrador, #nova-scotia, #ontario, #prince-edward-island, #quebec, #saskatchewan {
+    width: 150px;
+    height: 80px;
+    background-color: rgb(5, 5, 36);
+    border-radius: 20px;
+    border-top: none;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+    padding-top: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+#active-duration, #sessions, #calorie-burn {
+    width: 250px;
+    height: 150px;
+    background-color: rgb(5, 5, 36);
+    border-radius: 20px;
+    border-top: none;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+    padding-top: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+#reset, #submit {
+    height: 40px;
+    width: 100px;
+    border-radius: 50px;
+    color: white;
+    background: linear-gradient(to right, #3498db, #2c3e50);
+    border-top: none;
+    border-bottom: none;
+    border-right: none;
+    border-left: none;
+    font-weight: 600;
+    animation-name: fadeIn;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0s;
+    animation-play-state: running;
+    animation-iteration-count: 1;
+    cursor: pointer;
+}
+
+#loader-title {
+    font-size: large;
+    font-weight: 700;
+}
+
+#loader-developers {
+    font-size: medium; 
+    text-decoration-line: underline;
+}
+
+#loader-quote {
+    font-style: italic;
+    font-size: small;
+}
+
+#loader-version {
+    font-size: smaller;
+}
+
+#submit:hover, #reset:hover {
+    background: linear-gradient(to right, #185a9d, #43cea2);
+    color: white;
+}
+
+#my-total:hover, #total-distance:hover, #number-trips:hover {
+    background-color: lightblue;
+}
+
+#calendar:hover {
+    background-color: #49a09d;
+}
+
+.quote-box:hover {
+    text-decoration-line: underline;
+}
+
+/* CSS @keyframes Animations */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes vanish {
+    0% {
+        visibility: visible;
+    }
+    50% {
+        visibility: visible;
+    }
+    100% {
+        visibility: hidden;
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: translateX(0%);
+    } 
+    100% {
+        transform: translateX(-100%); 
+    }
+}
+
+@keyframes spin2 {
+    0% {
+        transform: translateX(5%);
+    } 
+    100% {
+        transform: translateX(-95%); 
+    }
+}

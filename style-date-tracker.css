@@ -4,12 +4,15 @@ body {
     align-items: center;
     display: flex;
     flex-direction: column;
-    background-image: url("login-page-background.jpg");
+    background-image: url("login-page-background.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     font-family: 'Montserrat';
     font-weight: 700;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    color: rgb(28, 60, 101); 
     font-style: normal;
     animation-name: fadeIn;
     animation-duration: 6s;
@@ -24,7 +27,7 @@ h1 {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-left: 5px;
+    margin-bottom: 25px;
 }
 
 /* HTML Classes */ 
@@ -40,7 +43,7 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: row;
+    flex-direction: column;
     animation-name: borderEffect;
     animation-timing-function: ease-in-out;
     animation-delay: 5s;
@@ -50,10 +53,20 @@ h1 {
     margin-top: 65px;
 }
 
+.date-boxes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 6px;
+    margin-bottom: 70px;
+}
+
 /* HTML IDs */
 #km-today, #km-yesterday, #km-this-week, #km-this-month, #km-this-year {
     display: flex;
-    justify-content: space-evenly;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
     width: 150px;
     height: 100px;
@@ -63,11 +76,11 @@ h1 {
     border-bottom: none;
     border-right: none;
     border-left: none;
-    gap: 2px;
+    gap: 1px;
 }
 
 #date-tracker-logo {
-    margin-right: 35px;
+    margin-bottom: 55px;
 }
 
 #word-km-today, #word-km-yesterday, #word-km-this-week, #word-km-this-month, #word-km-this-year {
@@ -77,7 +90,7 @@ h1 {
 
 #footer-details {
     justify-content: center;
-    color: white;
+    color: black;
     display: flex;
     text-align: center;
     margin-top: 70px;
@@ -95,7 +108,16 @@ h1 {
     border-bottom: none;
     border-left: none;
     border-right: none;
-    background: rgba(0, 0, 0, 0.5);
+    background-color: rgb(178, 58, 58);
+    font-weight: 800;
+}
+
+#date-tracker-word:hover, #word-km-today:hover, #word-km-yesterday:hover, #word-km-this-week:hover, #word-km-this-month:hover, #word-km-this-year:hover {
+    text-decoration-line: underline;
+}
+
+#date-tracker-logo:hover, #today-collector:hover, #yesterday-collector:hover, #week-collector:hover, #month-collector:hover, #year-collector:hover {
+    transform: scale(1.1);
 }
 
 /* HTML Pseudo-Element Notation */ 

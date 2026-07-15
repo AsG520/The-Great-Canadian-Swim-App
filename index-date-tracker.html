@@ -9,41 +9,38 @@
     />
     <link rel="shortcut icon" href="iPOTS-logo.png" />
     <title>Date Tracker Page: iPOTS Swimming Reminder App - 2026</title>
-    <link rel="stylesheet" href="style-date-tracker.css" />
   </head>
   <body>
     <div class="container">
-      <h1>Date Tracker</h1>
+      <h1 id="date-tracker-word">Date Tracker</h1>
       <img
         src="loader-logo.png"
-        width="70"
-        height="70"
+        width="120"
+        height="100"
         id="date-tracker-logo"
       />
-      <div id="km-today">
-        <input type="text" value="0" id="today-collector" readonly />
-        <br />
-        <div id="word-km-today">km ● Today</div>
-      </div>
-      <div id="km-yesterday">
-        <div id="word-km-yesterday">km ● Yesterday</div>
-        <br />
-        <input type="text" value="0" id="yesterday-collector" readonly />
-      </div>
-      <div id="km-this-week">
-        <div id="word-km-this-week">km ● This Week</div>
-        <br />
-        <input type="text" value="0" id="week-collector" readonly />
-      </div>
-      <div id="km-this-month">
-        <div id="word-km-this-month">km ● This Month</div>
-        <br />
-        <input type="text" value="0" id="month-collector" readonly />
-      </div>
-      <div id="km-this-year">
-        <div id="word-km-this-year">km ● This Year</div>
-        <br />
-        <input type="text" value="0" id="year-collector" readonly />
+      <div class="date-boxes">
+        <div id="km-today">
+          <input type="text" value="0" id="today-collector" readonly />
+          <span id="word-km-today">km ● Today</span>
+        </div>
+        <div id="km-yesterday">
+          <input type="text" value="0" id="yesterday-collector" readonly />
+          <span id="word-km-yesterday">km ● Yesterday</span>
+        </div>
+        <div id="km-this-week">
+          <input type="text" value="0" id="week-collector" readonly />
+          <span id="word-km-this-week">km ● This Week</span>
+        </div>
+        <div id="km-this-month">
+          <input type="text" value="0" id="month-collector" readonly />
+          <span id="word-km-this-month">km ● This Month</span>
+        </div>
+        <div id="km-this-year">
+          <input type="text" value="0" id="year-collector" readonly />
+          <br />
+          <span id="word-km-this-year">km ● This Year</span>
+        </div>
       </div>
     </div>
     <div id="footer-details">Privacy Policy / Terms of Use / Disclaimer</div>

@@ -12,58 +12,48 @@
   </head>
   <body>
     <div class="container">
-      <h1 id="account-registration-word">Account Registration</h1>
+      <h1 id="account-registration-word">Account<br />Registration</h1>
+      <br />
       <img
         src="loader-logo.png"
         width="120"
         height="100"
         id="account-registration-logo"
       />
+      <div id="customAlert" class="alertBox">
+        <label id="alertText"></label>
+      </div>
       <div class="first-name-details">
         <label id="first-name-word">👤 First Name</label>
-        <input
-          type="text"
-          id="first-name"
-          placeholder="Enter your first name"
-        />
-      </div>
-      <br />
-      <div class="last-name-details">
-        <label id="last-name-word">👤 Last Name</label>
-        <input type="text" id="last-name" placeholder="Enter your last name" />
+        <input type="text" id="fName" placeholder="Enter your first name" />
       </div>
       <br />
       <div class="email-details">
         <label id="email-word">📧 Email</label>
-        <input
-          type="text"
-          id="email-address"
-          placeholder="Enter your email address"
-        />
+        <input type="text" id="rEmail" placeholder="Enter your email address" />
       </div>
       <br />
       <div class="password-details">
         <label id="password-word">🔒 Password</label>
         <input
           type="password"
-          id="password"
+          id="rPassword"
           placeholder="Enter your password"
         />
       </div>
-      <input type="button" id="sign-up" value="Sign Up" />
+      <br />
+      <input type="button" id="submitSignUp" value="Sign Up" />
       <div id="sign-in-platforms">
-        <img src="apple-logo.png" height="35" width="35" id="apple-logo" />
-        <img src="google-logo.png" height="35" width="35" id="google-logo" />
-        <img
-          src="facebook-logo.png"
-          height="35"
-          width="35"
-          id="facebook-logo"
-        />
+        <img src="google-logo.png" height="35" width="35" id="googleSignIn" />
       </div>
       <br />
-      <div>Already have an Account! <span id="login-word">Login</span></div>
+      <h4 id="already-have-account-sentence">
+        Already have an Account! <span id="login-word"><br />Login</span>
+      </h4>
     </div>
+    <br />
+    <div id="footer-details">Privacy Policy / Terms of Use / Disclaimer</div>
+    <script type="module" src="firebaseauth.js"></script>
     <script src="function-account-registration.js"></script>
   </body>
 </html>
