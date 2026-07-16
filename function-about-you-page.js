@@ -1,3 +1,7 @@
-function makeBlack() {
-    document.getElementById("disability-option").classList.add("clicked-black");
+let continueButton = document.getElementById("continue");
+
+function callReasonSwimmingPage() {
+    window.location.href = "index-reason-swimming-page.html";
 }
+
+continueButton.addEventListener("click", callReasonSwimmingPage);

@@ -10,6 +10,19 @@ const firebaseConfig = {
     appId: "1:879740645963:web:f7419ce03565bf401fd3ce",
 };
 
+// Custom user message function
+function customAlert(message) {
+    // links to html element for formating 
+    const alertBox = document.getElementById("customAlert");
+
+    document.getElementById("alertText").textContent = message;
+    alertBox.style.display = "block";
+
+    setTimeout(() => {
+        alertBox.style.display = "none";
+    }, 3000); // Hides after 3 seconds
+}
+
 const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
 const submit = document.getElementById("submit");
@@ -23,7 +36,7 @@ submit.addEventListener("click", async () => {
 
     // Make sure every field is filled in
     if (username === "" || age === "" || gender === "" || height === "" || weight === "") {
-        alert("Please fill out all information before continuing.");
+        customAlert("Please fill out all information before continuing.");
         return;
     }
 
@@ -33,3 +46,11 @@ submit.addEventListener("click", async () => {
     await updateDoc(userRef, userData);
     window.location.href = "homepage.html";
 });
+
+let submitButton = document.getElementById("submit");
+
+function callAboutYouPage() {
+    window.location.href = "index-about-you-page.html";
+}
+
+submitButton.addEventListener("click", callAboutYouPage);

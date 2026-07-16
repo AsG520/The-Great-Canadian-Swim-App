@@ -29,8 +29,6 @@ h1 {
 
 h4 {
     text-align: center;
-    font-size: 20px;
-    font-weight: 600;
 }
 
 /* HTML Classes */ 
@@ -55,15 +53,27 @@ h4 {
     animation-play-state: running;
 }
 
-/* HTML IDs */
-#profile-choose {
-    width: 324px;
-    text-align: center;
-    margin-bottom: 6px;
-    font-weight: 700;
+.title{
+    font-size:17px;
+    font-weight:700;
 }
 
-#continue {
+.subtitle{
+    font-size:12px;
+    font-weight:500;
+}
+
+#login-page-logo-circle {
+    width: 120px;
+    height: 120px;
+    border-radius: 50% / 35%;
+}
+
+#footer-details:hover, h1:hover, h4:hover {
+    text-decoration-line: underline;
+}
+
+#gotohome {
     height: 56px;
     width: 324px;
     color: white;
@@ -79,41 +89,26 @@ h4 {
     border-right: none;
 }
 
-#continue:hover {
-    background-color: rgba(5, 5, 36, 0.7);
-}
-
-#reason-swimming-logo:hover {
-    transform: scale(1.1);
-}
-
-#reason {
+.area {
     width: 300px;
     height: 250px;
-    font-size: 18px;
-    display: flex;
-    text-align: left;
+    text-align: left;     
     justify-content: center;
-    align-items: center;
-    border-top: none;
-    border-bottom: none;
-    border-left: none;
-    border-right: none;
-    background: #eff0f2;
-    color: rgb(28, 60, 101);
-    font-weight: 600;
-    border-radius: 16px;
+    margin: 15px 0;
+    border-radius: 7px;
+    display: flex;
+    flex-direction:column;
+    border-color: rgb(28, 60, 101);
+    border: 2px solid 
 }
 
-#write-your-reason-word {
-    width: 324px;
-    text-align: center;
-    margin-bottom: 6px;
-    font-weight: 700;
-}
-
-#footer-details:hover, h1:hover, h4:hover, #profile-choose:hover, #write-your-reason-word:hover {
-    text-decoration-line: underline;
+.summary-card {
+    width: 100%;
+    padding: 15px;
+    border: 2px solid rgb(28,60,101);
+    border-radius: 10px;
+    box-sizing: border-box;
+    text-align: left;
 }
 
 #continue:active {

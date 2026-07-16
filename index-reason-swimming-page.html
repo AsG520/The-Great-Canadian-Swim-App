@@ -11,17 +11,25 @@
     <title>Reason Swimming Page: iPOTS Swimming Reminder App - 2026</title>
   </head>
   <div class="container">
-    <h1 id="what's-your-reason-for-swimming-word">
+    <h1 id="whats-your-reason-for-swimming-word">
       What's your reason for swimming?
     </h1>
+    <img
+      src="loader-logo.png"
+      width="120"
+      height="100"
+      id="reason-swimming-logo"
+    />
     <h4 id="description">
       Your "why" is what keeps you<br />going when it gets tough.
     </h4>
-    <br />
     <label id="write-your-reason-word">Write your reason</label>
-    <input type="text" id="reason" />
+    <input type="text" id="reason" maxlength="100" />
     <br />
-    <label>This will be displayed on<br />your profile if you choose.</label>
+    <label id="profile-choose"
+      >This will be displayed on<br />your profile if you choose.</label
+    >
+    <input type="checkbox" />
     <br />
     <input type="button" id="continue" value="Continue" />
   </div>

@@ -2,7 +2,7 @@
 body {
     justify-content: center;
     align-items: center;
-    display: flex;
+    display: flex; 
     flex-direction: column;
     background-image: url("login-page-background.png");
     background-repeat: no-repeat;
@@ -10,31 +10,30 @@ body {
     background-size: cover;
     font-family: 'Montserrat';
     font-weight: 700;
-    overflow-x: hidden;
-    overflow-y: hidden;
-    color: rgb(28, 60, 101); 
     font-style: normal;
     animation-name: fadeIn;
     animation-duration: 6s;
+    color: rgb(28, 60, 101);
     animation-delay: 0s;
     animation-fill-mode: forwards;
     animation-play-state: running;
     animation-iteration-count: 1;
-    animation-timing-function: ease-in-out; 
+    animation-timing-function: ease-in-out;
+    overflow-x: hidden;
+    overflow-y: visible;
 }
 
-h1 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 25px;
+h4 {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
 }
 
 /* HTML Classes */ 
 .container {
-    width: 800px;
-    height: 410px;
-    background-color: rgba(255, 255, 255, 0.5);
+    width: 360px;
+    height: 800px;
+    background-color: white;
     border-radius: 20px;
     border-top: none;
     border-bottom: none;
@@ -50,79 +49,64 @@ h1 {
     animation-duration: 10s;
     animation-iteration-count: infinite;
     animation-play-state: running;
-    margin-top: 65px;
-}
-
-.date-boxes {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    gap: 6px;
-    margin-bottom: 70px;
 }
 
 /* HTML IDs */
-#km-today, #km-yesterday, #km-this-week, #km-this-month, #km-this-year {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    width: 150px;
-    height: 100px;
-    background-color: rgba(255, 255, 255, 0.5);
-    border-radius: 20px;
-    border-top: none;
-    border-bottom: none;
-    border-right: none;
-    border-left: none;
-    gap: 1px;
-}
-
-#date-tracker-logo {
-    margin-bottom: 55px;
-}
-
-#word-km-today, #word-km-yesterday, #word-km-this-week, #word-km-this-month, #word-km-this-year {
-    font-size: 13px;       
+#description {
     text-align: center;
 }
 
-#footer-details {
-    justify-content: center;
-    color: black;
-    display: flex;
-    text-align: center;
-    margin-top: 70px;
-}
-
-#today-collector, #yesterday-collector, #week-collector, #month-collector, #year-collector {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 50px;
-    height: 25px;
-    text-align: center;
-    border-radius: 10px;
-    border-top: none;
-    border-bottom: none;
-    border-left: none;
-    border-right: none;
-    background-color: rgb(178, 58, 58);
-    font-weight: 800;
-}
-
-#date-tracker-word:hover, #word-km-today:hover, #word-km-yesterday:hover, #word-km-this-week:hover, #word-km-this-month:hover, #word-km-this-year:hover {
-    text-decoration-line: underline;
-}
-
-#date-tracker-logo:hover, #today-collector:hover, #yesterday-collector:hover, #week-collector:hover, #month-collector:hover, #year-collector:hover {
+#date-tracker-logo:hover {
     transform: scale(1.1);
 }
 
-/* HTML Pseudo-Element Notation */ 
-input[type="text"] {
+#today-distance, #week-distance, #month-distance, #year-distance {
+    width: 324px;
+    height: 56px;
+    font-size: 18px;
+    display: flex;
+    text-align: left;
+    justify-content: center;
+    align-items: center;
+    border-top: none;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+    background: #eff0f2;
+    color: rgb(28, 60, 101);
+    font-weight: 600;
+    border-radius: 16px;
+}
+
+#ok {
+    height: 56px;
+    width: 324px;
     color: white;
+    font-style: normal;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    background-color: rgb(15, 192, 252);
+    border-radius: 28px;
+    border-top: none;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+}
+
+#ok:hover {
+    background-color: rgba(5, 5, 36 , 0.7);
+}
+
+#today-word, #weekly-word, #monthly-word, #yearly-word {
+    text-align: left;
+    width: 324px;
+    margin-bottom: 6px;
+    font-weight: 700;
+}
+
+h1:hover, h4:hover, #footer-details:hover, #today-word:hover, #weekly-word:hover, #monthly-word:hover, #yearly-word:hover {
+    text-decoration-line: underline; 
 }
 
 /* HTML @keyframes Animations */
@@ -140,18 +124,18 @@ input[type="text"] {
 
 @keyframes borderEffect {
     0% {
-        box-shadow: 0px 0px 15px 15px rgb(2, 89, 148);
+        border: 5px solid rgb(28, 60, 101);
     }
     25% {
-        box-shadow: 0px 0px 15px 15px rgb(23, 37, 49);
+        border: 5px solid rgb(15, 192, 252);
     }   
     50% {
-        box-shadow: 0px 0px 15px 15px rgb(91, 47, 33);
+        border: 5px solid rgb(178, 58, 58);
     }
     75% {
-        box-shadow: 0px 0px 15px 15px rgb(13, 4, 5);
+        border: 5px solid rgb(0, 0, 0);
     }
     100% {
-        box-shadow: 0px 0px 15px 15px rgb(182, 169, 168);
+        border: 5px solid #F5F7F9;
     }
 }
