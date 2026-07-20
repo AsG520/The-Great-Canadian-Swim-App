@@ -25,9 +25,9 @@ body {
 
 /* HTML Classes */ 
 .container {
-    width: 360px;
-    height: 820px;
-    background-color: white;
+    width: 380px;
+    height: 835px;
+    background-color:   white;
     border-radius: 20px;
     border-top: none;
     border-bottom: none;
@@ -64,6 +64,19 @@ body {
     border-radius: 16px;
 }
 
+.disability-details, .parent-caregiver-details, .supporter-details, .club-coach-details, .education-details, .organization-details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 8px;
+}
+
+#disability-checkbox, #parent-caregiver-checkbox, #supporter-checkbox, #club-coach-checkbox, #education-checkbox, #organization-checkbox {
+    width: 25px;
+    height: 25px;
+}
+
 #disability-option:hover, #parent-caregiver-option:hover, #supporter-option:hover, #club-coach-option:hover, #education-option:hover, #education-option:hover, #organization-option:hover {
     background: rgba(0, 0, 0, 0.3);
 }
@@ -88,6 +101,10 @@ body {
     border-right: none;
 }
 
+#footer-details:hover {
+    transform: scale(1.050);
+}
+
 .clicked-black {
     background-color: black;
 }
@@ -101,7 +118,7 @@ body {
 }
 
 #continue:hover {
-    background-color: rgba(5, 5, 36 , 0.7);
+    background-color: rgb(28, 60, 101);
 }
 
 #description {

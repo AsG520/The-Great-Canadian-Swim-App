@@ -51,7 +51,11 @@ body {
 }
 
 #submitSignIn:hover {
-    background-color: rgba(5, 5, 36, 0.7);
+    background-color: rgb(28, 60, 101);
+}
+
+#footer-details:hover {
+    transform: scale(1.050);
 }
 
 #submitSignIn:active, #googleSignIn:active {

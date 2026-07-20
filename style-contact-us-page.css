@@ -165,6 +165,10 @@ body {
     transform: scale(1.1);
 }
 
+#footer-details:hover {
+    transform: scale(1.050);
+}
+
 #phone-number:hover, #email-address:hover {
     transform: scale(1.025);
 }
@@ -179,7 +183,7 @@ body {
 }
 
 #send:hover {
-    background-color: rgba(5, 5, 36, 0.7);
+    background-color: rgb(28, 60, 101);
 }
 
 /* HTML Pseudo-Element Notation */ 

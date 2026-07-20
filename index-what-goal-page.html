@@ -1,4 +1,4 @@
-<html>
+<html lang="en">
   <head>
     <link rel="stylesheet" href="style-what-goal-page.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -8,18 +8,26 @@
       rel="stylesheet"
     />
     <link rel="shortcut icon" href="iPOTS-logo.png" />
-    <title>
-      What Is Your Goal Or Intention Page: iPOTS Swimming Reminder App - 2026
-    </title>
+    <title>Goal or Intention Page: iPOTS Swimming Reminder App - 2026</title>
   </head>
   <body>
     <div class="container">
-      <h1 id="what-goal-word">What is your goal or intention?</h1>
-      <h3 id="description">
+      <h1 id="what-goal-word">
+        What is your goal<br />
+        or intention?
+      </h1>
+      <h4 id="description">
         This is about showing up,<br />not just distance.
-      </h3>
+      </h4>
+      <img
+        src="loader-logo.png"
+        width="120"
+        height="100"
+        id="what-goal-logo"
+        alt="Picture of Great Canadian Swim logo."
+      />
+      <br />
       <div class="goal-option">
-        <!-- Heart icon code taken from online-->
         <svg
           width="24"
           height="24"
@@ -33,15 +41,14 @@
           />
         </svg>
         <div class="goal-text">
-          <label class="title">Show up</label>
+          <label class="title">Show Up</label>
           <label class="subtitle"
-            >Focus on consistency<br />and daily tries</label
+            >Focus on consistency<br />and daily tries.</label
           >
         </div>
-        <input type="checkbox" id="showupcheck" />
+        <input type="checkbox" id="showupcheck" alt="Checkbox of show up." />
       </div>
       <div class="goal-option">
-        <!-- Person icon code taken from online-->
         <svg
           xmlns="http://www.w3.org/2000/svg"
           xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -100,13 +107,16 @@
           </g>
         </svg>
         <div class="goal-text">
-          <label class="title">Improve my health</label>
-          <label class="subtitle">Build a healthier<br />lifestyle</label>
+          <label class="title">Improve My Health</label>
+          <label class="subtitle">Build a healthier<br />lifestyle.</label>
         </div>
-        <input type="checkbox" id="improvehealthcheck" />
+        <input
+          type="checkbox"
+          id="improvehealthcheck"
+          alt="Checkbox of improve my health."
+        />
       </div>
       <div class="goal-option">
-        <!-- Community icon code taken from online-->
         <svg
           xmlns="http://www.w3.org/2000/svg"
           xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -229,15 +239,18 @@
           </g>
         </svg>
         <div class="goal-text">
-          <label class="title">Support my community</label>
+          <label class="title">Support My Community</label>
           <label class="subtitle"
-            >Raise awareness and<br />make an impact</label
+            >Raise awareness and<br />make an impact.</label
           >
         </div>
-        <input type="checkbox" id="supportcommunitycheck" />
+        <input
+          type="checkbox"
+          id="supportcommunitycheck"
+          alt="Checkbox of support my community."
+        />
       </div>
       <div class="goal-option">
-        <!-- other icon code taken from online-->
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="24"
@@ -287,15 +300,17 @@
         </svg>
         <div class="goal-text">
           <label class="title">Other</label>
-          <label class="subtitle">Have another reason<br />or goal</label>
+          <label class="subtitle">Have another reason<br />or goal.</label>
         </div>
-        <input type="checkbox" id="otherreasoncheck" />
+        <input type="checkbox" id="otherreasoncheck" alt="Checkbox of other." />
       </div>
       <br />
       <input type="button" value="Ok" id="ok" />
     </div>
     <br />
-    <div id="footer-details">Privacy Policy / Terms of Use / Disclaimer</div>
+    <a href="app-terms-of-use.pdf" target="_blank">
+      <div id="footer-details">Privacy Policy / Terms of Use / Disclaimer</div>
+    </a>
     <script type="module" src="function-what-goal-page.js"></script>
   </body>
 </html>

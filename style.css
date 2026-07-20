@@ -61,7 +61,7 @@ h4 {
 #get-started {
     height: 56px;
     width: 324px;
-    color: white;
+    color: white; /* #FFFFFF */ 
     font-style: normal;
     font-size: 20px;
     font-weight: 600;
@@ -75,12 +75,20 @@ h4 {
     transform: scale(1.1);
 }
 
-#the-great-canadian-swim-word:hover, #every-try-counts:hover, #every-ripple-matters:hover, #footer-details:hover {
+#the-great-canadian-swim-word:hover, #every-try-counts:hover, #every-ripple-matters:hover, #text-decoration-line {
     text-decoration-line: underline;
 }
 
+#footer-details:hover {
+    transform: scale(1.050);
+}
+
 #get-started:hover {
-    background-color: rgba(5, 5, 36 , 0.7);
+    background-color: rgb(28, 60, 101);
+}
+
+#get-stated:active {
+    transform: translateY(1px);
 }
 
 /* HTML @keyframes Animations */

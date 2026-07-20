@@ -77,3 +77,42 @@ Monday, July 6
 
 Tuesday, July 7
 - Duration/Time: 2h
+
+Wednesday, July 8
+- Duration/Time: 2h
+
+Thursday, July 9
+- Duration/Time: 2h
+
+Friday, July 10
+- Duration/Time: 2h
+
+Saturday, July 11
+- Duration/Time: 2h
+
+Sunday, July 12
+- Duration/Time: 2h
+
+Monday, July 13
+- Duration/Time: 2h
+
+Tuesday, July 14
+- Duration/Time: 2h
+
+Wednesday, July 15
+- Duration/Time: 2h 
+
+Thursday, July 16
+- Duration/Time: 2h
+
+Friday, July 17
+- Duration/Time: 2h
+
+Saturday, July 18
+- Duration/Time: 2h
+
+Sunday, July 19
+- Duration/Time: 2h 
+
+Monday, July 20
+- Duration/Time: 2h

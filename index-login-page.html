@@ -1,4 +1,4 @@
-<html>
+<html lang="en">
   <head>
     <link rel="stylesheet" href="style-contact-us-page.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -19,6 +19,7 @@
         width="120"
         height="100"
         id="login-page-logo"
+        alt="Picture of Great Canadian Swim logo."
       />
       <div id="username-details">
         <div id="customAlert" class="alertBox">
@@ -26,20 +27,36 @@
         </div>
         <div class="username-header">
           <label id="username-word">Email</label>
-          <img src="user-picture.png" height="25" width="25" />
+          <img
+            src="user-picture.png"
+            height="25"
+            width="25"
+            alt="Picture of user logo."
+          />
         </div>
-        <input type="email" id="email" placeholder="Enter your email" />
+        <input
+          type="email"
+          id="email"
+          placeholder="Enter your email"
+          alt="Textbox of email."
+        />
       </div>
       <br />
       <div id="password-details">
         <div class="password-header">
           <label id="password-word">Password</label>
-          <img src="padlock-picture.png" height="25" width="25" />
+          <img
+            src="padlock-picture.png"
+            height="25"
+            width="25"
+            alt="Picture of lock logo."
+          />
         </div>
         <input
           type="password"
           id="password"
           placeholder="Enter your password"
+          alt="Textbox of password."
         />
       </div>
       <h4 id="forgot-password-word">Forgot Password?</h4>
@@ -50,10 +67,18 @@
         </h4>
       </div>
       <br />
-      <img src="google-logo.png" height="35" width="35" id="googleSignIn" />
+      <img
+        src="google-logo.png"
+        height="35"
+        width="35"
+        id="googleSignIn"
+        alt="Picture of Google logo."
+      />
     </div>
     <br />
-    <div id="footer-details">Privacy Policy / Terms of Use / Disclaimer</div>
+    <a href="app-terms-of-use.pdf" target="_blank">
+      <div id="footer-details">Privacy Policy / Terms of Use / Disclaimer</div>
+    </a>
     <script type="module" src="firebaseauth.js"></script>
     <script type="module" src="function-login-page.js"></script>
   </body>

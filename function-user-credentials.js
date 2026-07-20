@@ -1,3 +1,5 @@
+// Basically, gets the values that the user puts in (e.g. username, age, gender, etc) it forces them to insert input and storages information into the fire store.
+
 import {initializeApp} from "https://www.gstatic.com/firebasejs/10.11.1/firebase-app.js";
 import {getFirestore, doc, updateDoc} from "https://www.gstatic.com/firebasejs/10.11.1/firebase-firestore.js";
 

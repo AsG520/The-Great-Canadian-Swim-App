@@ -98,6 +98,10 @@ h1 {
     border-radius: 16px;
 }
 
+#footer-details:hover {
+    transform: scale(1.050);
+}
+
 #map-of-canada-picture:hover, #welcome-page-logo:hover {
     transform: scale(1.05);
 }
@@ -111,7 +115,7 @@ h1:hover, h4:hover, #footer-details:hover {
 }
 
 #create-an-account:hover, #sign-in:hover {
-    background-color: rgba(5, 5, 36 , 0.7);
+    background-color: rgb(28, 60, 101);
 }
 
 /* HTML @keyframes Animations */

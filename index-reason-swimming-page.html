@@ -1,4 +1,4 @@
-<html>
+<html lang="en">
   <head>
     <link rel="stylesheet" href="style-reason-swimming-page.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -14,26 +14,38 @@
     <h1 id="whats-your-reason-for-swimming-word">
       What's your reason for swimming?
     </h1>
+    <h4 id="description">
+      Your "why" is what keeps you<br />going when it gets tough.
+    </h4>
     <img
       src="loader-logo.png"
       width="120"
       height="100"
       id="reason-swimming-logo"
+      alt="Picture of Great Canadian Swim logo."
     />
-    <h4 id="description">
-      Your "why" is what keeps you<br />going when it gets tough.
-    </h4>
-    <label id="write-your-reason-word">Write your reason</label>
-    <input type="text" id="reason" maxlength="100" />
     <br />
-    <label id="profile-choose"
-      >This will be displayed on<br />your profile if you choose.</label
-    >
-    <input type="checkbox" />
+    <label id="write-your-reason-word">Write your reason</label>
+    <input
+      type="text"
+      id="reason"
+      maxlength="29"
+      alt="Textbox of reason."
+      placeholder="Enter you reason"
+    />
+    <br />
+    <div class="profile-details">
+      <input type="checkbox" alt="Checkbox of reason." id="profile-checkbox" />
+      <label id="profile-choose"
+        >This will be displayed on<br />your profile if you choose.</label
+      >
+    </div>
     <br />
     <input type="button" id="continue" value="Continue" />
   </div>
   <br />
-  <div id="footer-details">Privacy Policy / Terms of Use / Disclaimer</div>
+  <a href="app-terms-of-use.pdf" target="_blank">
+    <div id="footer-details">Privacy Policy / Terms of Use / Disclaimer</div>
+  </a>
   <script type="module" src="function-reason-swimming-page.js"></script>
 </html>

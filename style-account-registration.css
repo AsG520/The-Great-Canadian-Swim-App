@@ -134,12 +134,16 @@ h4 {
 }
 
 #submitSignUp:hover {
-    background-color: rgba(5, 5, 36 , 0.7);
+    background-color: rgb(28, 60, 101);
 }
 
 #googleSignIn {
     margin-bottom: -30px;
     cursor: pointer;
+}
+
+#footer-details:hover {
+    transform: scale(1.050);
 }
 
 #submitSignUp:active, #googleSignIn:active {

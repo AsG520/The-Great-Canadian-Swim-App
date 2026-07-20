@@ -1,4 +1,4 @@
-<html>
+<html lang="en">
   <head>
     <link rel="stylesheet" href="style-date-tracker.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -18,24 +18,51 @@
         width="120"
         height="100"
         id="date-tracker-logo"
+        alt="Picture of Great Canadian Swim logo."
       />
       <h4 id="description">Your progress over the<br />period of time!</h4>
       <label id="today-word">Today</label>
-      <input type="number" id="today-distance" readonly value="0" />
+      <input
+        type="number"
+        id="today-distance"
+        readonly
+        value="0"
+        alt="Textbox of today distance."
+      />
       <br />
       <label id="weekly-word">Weekly</label>
-      <input type="number" id="week-distance" readonly value="0" />
+      <input
+        type="number"
+        id="week-distance"
+        readonly
+        value="0"
+        alt="Textbox of weekly distance."
+      />
       <br />
       <label id="monthly-word">Monthly</label>
-      <input type="number" id="month-distance" readonly value="0" />
+      <input
+        type="number"
+        id="month-distance"
+        readonly
+        value="0"
+        alt="Textbox of monthly distance."
+      />
       <br />
       <label id="yearly-word">Yearly</label>
-      <input type="number" id="year-distance" readonly value="0" />
+      <input
+        type="number"
+        id="year-distance"
+        readonly
+        value="0"
+        alt="Textbox of yearly distance."
+      />
       <br />
       <input type="button" value="Ok" id="ok" />
     </div>
     <br />
-    <div id="footer-details">Privacy Policy / Terms of Use / Disclaimer</div>
+    <a href="app-terms-of-use.pdf" target="_blank">
+      <div id="footer-details">Privacy Policy / Terms of Use / Disclaimer</div>
+    </a>
     <script type="module" src="function-date-tracker.js"></script>
   </body>
 </html>

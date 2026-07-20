@@ -1,4 +1,4 @@
-<html>
+<html lang="en">
   <head>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -17,40 +17,74 @@
         This helps us personalize<br />
         your experience.
       </h4>
-      <img src="loader-logo.png" width="120" height="100" id="about-you-logo" />
-      <br />
-      <input
-        type="button"
-        value="♿ I live with a Disability"
-        id="disability-option"
+      <img
+        src="loader-logo.png"
+        width="120"
+        height="100"
+        id="about-you-logo"
+        alt="Picture of Great Canadian Swim logo."
       />
       <br />
-      <input
-        type=""
-        value="👪 I am a Parent / Caregiver"
-        id="parent-caregiver-option"
-      />
+      <div class="disability-details">
+        <input type="checkbox" id="disability-checkbox" />
+        <input
+          type="button"
+          value="♿ I live with a Disability"
+          id="disability-option"
+        />
+      </div>
       <br />
-      <input type="button" value="👏 I am a Supporter" id="supporter-option" />
+      <div class="parent-caregiver-details">
+        <input type="checkbox" id="parent-caregiver-checkbox" />
+        <input
+          type="button"
+          value="👪 I am a Parent / Caregiver"
+          id="parent-caregiver-option"
+        />
+      </div>
       <br />
-      <input
-        type="button"
-        value="🏊‍♂️ Swim Club / Coach"
-        id="club-coach-option"
-      />
+      <div class="supporter-details">
+        <input type="checkbox" id="supporter-checkbox" />
+        <input
+          type="button"
+          value="👏 I am a Supporter"
+          id="supporter-option"
+        />
+      </div>
       <br />
-      <input type="button" value="🎒 School / Student" id="education-option" />
+      <div class="club-coach-details">
+        <input type="checkbox" id="club-coach-checkbox" />
+        <input
+          type="button"
+          value="🏊‍♂️ Swim Club / Coach"
+          id="club-coach-option"
+        />
+      </div>
       <br />
-      <input
-        type="button"
-        value="🏢 Corporate / Organization"
-        id="organization-option"
-      />
+      <div class="education-details">
+        <input type="checkbox" id="education-checkbox" />
+        <input
+          type="button"
+          value="🎒 School / Student"
+          id="education-option"
+        />
+      </div>
+      <br />
+      <div class="organization-details">
+        <input type="checkbox" id="organization-checkbox" />
+        <input
+          type="button"
+          value="🏢 Corporate / Organization"
+          id="organization-option"
+        />
+      </div>
       <br />
       <input type="button" value="Continue" id="continue" />
     </div>
     <br />
-    <div id="footer-details">Privacy Policy / Terms of Use / Disclaimer</div>
+    <a href="app-terms-of-use.pdf" target="_blank">
+      <div id="footer-details">Privacy Policy / Terms of Use / Disclaimer</div>
+    </a>
     <script src="function-about-you-page.js"></script>
   </body>
 </html>

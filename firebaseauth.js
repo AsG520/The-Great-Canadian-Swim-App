@@ -1,3 +1,5 @@
+// Basically, allows user to create an account (e.g. email/password, Google) and creates the storage base for data handling.
+
 // Import the functions you need from the SDKs you need
  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.11.1/firebase-app.js"; // Imports firebase connection tools 
  import{getFirestore, setDoc, updateDoc, doc, getDoc, collection, query, where, getDocs} from "https://www.gstatic.com/firebasejs/10.11.1/firebase-firestore.js" // connects to Firebase's database, Firebase stores UID, Email and password, while Firestore holds other info

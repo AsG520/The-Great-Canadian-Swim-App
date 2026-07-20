@@ -36,7 +36,7 @@ h4 {
 /* HTML Classes */ 
 .container {
     width: 360px;
-    height: 800px;
+    height: 610px;
     background-color: white;
     border-radius: 20px;
     border-top: none;
@@ -63,6 +63,23 @@ h4 {
     font-weight: 700;
 }
 
+.profile-details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 260px;
+}
+
+#footer-details:hover {
+    transform: scale(1.050);
+}
+
+#profile-checkbox {
+    width: 25px;
+    height: 25px;
+}
+
 #continue {
     height: 56px;
     width: 324px;
@@ -80,7 +97,7 @@ h4 {
 }
 
 #continue:hover {
-    background-color: rgba(5, 5, 36, 0.7);
+    background-color: rgb(28, 60, 101);
 }
 
 #reason-swimming-logo:hover {
@@ -89,7 +106,7 @@ h4 {
 
 #reason {
     width: 300px;
-    height: 250px;
+    height: 50px;
     font-size: 18px;
     display: flex;
     text-align: left;
@@ -118,6 +135,19 @@ h4 {
 
 #continue:active {
     transform: translateY(1px);
+}
+
+/* HTML Pseudo-Element Notation */ 
+input::placeholder {
+    color: rgb(28, 60, 101);
+    font-weight: 600;
+    font-size: 18px;
+    text-align: left;
+}
+
+input[type="text"] {
+    color: rgb(28, 60, 101);
+    text-align: left;
 }
 
 /* HTML @keyframes Animations */

@@ -1,4 +1,4 @@
-<html>
+<html lang="en">
   <head>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -19,18 +19,29 @@
         width="120"
         height="100"
         id="account-registration-logo"
+        alt="Picture of Great Canadian Swim logo."
       />
       <div id="customAlert" class="alertBox">
         <label id="alertText"></label>
       </div>
       <div class="first-name-details">
         <label id="first-name-word">👤 First Name</label>
-        <input type="text" id="fName" placeholder="Enter your first name" />
+        <input
+          type="text"
+          id="fName"
+          placeholder="Enter your first name"
+          alt="Textbox of name."
+        />
       </div>
       <br />
       <div class="email-details">
         <label id="email-word">📧 Email</label>
-        <input type="text" id="rEmail" placeholder="Enter your email address" />
+        <input
+          type="text"
+          id="rEmail"
+          placeholder="Enter your email address"
+          alt="Textbox of email."
+        />
       </div>
       <br />
       <div class="password-details">
@@ -39,12 +50,19 @@
           type="password"
           id="rPassword"
           placeholder="Enter your password"
+          alt="Textbox of password."
         />
       </div>
       <br />
       <input type="button" id="submitSignUp" value="Sign Up" />
       <div id="sign-in-platforms">
-        <img src="google-logo.png" height="35" width="35" id="googleSignIn" />
+        <img
+          src="google-logo.png"
+          height="35"
+          width="35"
+          id="googleSignIn"
+          alt="Picture of Google logo."
+        />
       </div>
       <br />
       <h4 id="already-have-account-sentence">
@@ -52,7 +70,9 @@
       </h4>
     </div>
     <br />
-    <div id="footer-details">Privacy Policy / Terms of Use / Disclaimer</div>
+    <a href="app-terms-of-use.pdf" target="_blank">
+      <div id="footer-details">Privacy Policy / Terms of Use / Disclaimer</div>
+    </a>
     <script type="module" src="firebaseauth.js"></script>
     <script src="function-account-registration.js"></script>
   </body>
