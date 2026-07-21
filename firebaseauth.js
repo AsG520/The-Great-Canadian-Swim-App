@@ -213,28 +213,6 @@ if(signIn) {
 
         const email = document.getElementById('email').value.trim().toLowerCase();
         const password = document.getElementById('password').value;
-      const q = query(
-    collection(db, "users"),
-    where("email", "==", email)
-);
-
-const snapshot = await getDocs(q);
-
-if (!snapshot.empty) {
-
-    let googleAccount = false;
-
-snapshot.forEach(doc => {
-    if (doc.data().provider === "google") {
-        googleAccount = true;
-    }
-});
-
-if (googleAccount) {
-    customAlert("This account was created with Google. Please sign in using Google.");
-    return;
-}
-}
 
         const userCredential = await signInWithEmailAndPassword(auth, email, password);
 
@@ -242,23 +220,22 @@ if (googleAccount) {
 
         localStorage.setItem('loggedInUserId', user.uid);
 
-        checkUserCredentials(user);
+       await checkUserCredentials(user);
         //window.location.href = 'index.html';
 
     } catch (error) {
-    console.error("Firebase Error:");
     console.error(error.code);
     console.error(error.message);
 
-if (error.code === "auth/invalid-credential") {
-    customAlert("Incorrect email or password.");
-}
-else if (error.code === "auth/too-many-requests") {
-    customAlert("Too many failed attempts. Please try again later.");
-}
-else {    
-    customAlert("Unable to sign in.");
-}
+    if (error.code === "auth/invalid-credential") {
+        customAlert("Incorrect email or password. If you created your account with Google, please use the Google Sign-In button.");
+    }
+    else if (error.code === "auth/too-many-requests") {
+        customAlert("Too many failed attempts. Please try again later.");
+    }
+    else {
+        customAlert("Unable to sign in.");
+    }
 }
 });
 
