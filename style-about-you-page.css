@@ -47,7 +47,7 @@ body {
 
 /* HTML IDs */
 #disability-option, #parent-caregiver-option, #supporter-option, #club-coach-option, #education-option, #organization-option {
-    width: 324px;
+    width: 330px;
     height: 56px;
     font-size: 18px;
     display: flex;
