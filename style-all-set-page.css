@@ -118,6 +118,13 @@ h4 {
     transform: scale(1.050);
 }
 
+#footer-details {
+    justify-content: center;
+    color: rgb(28, 60, 101);
+    display: flex;
+    text-align: center;
+}
+
 #gotohome:hover {
     background-color: rgb(28, 60, 101);
 }

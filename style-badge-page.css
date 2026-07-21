@@ -86,7 +86,14 @@ h4 {
     border-right: none;
 }
 
-#badges-word:hover, #description:hover {
+#footer-details {
+    justify-content: center;
+    color: rgb(28, 60, 101);
+    display: flex;
+    text-align: center;
+}
+
+#badges-word:hover, #description:hover, #footer-details:hover {
     text-decoration-line: underline;
 }
 

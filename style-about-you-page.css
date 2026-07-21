@@ -132,7 +132,9 @@ body {
 }
 
 #footer-details {
+    justify-content: center;
     color: rgb(28, 60, 101);
+    display: flex;
     text-align: center;
 }
 

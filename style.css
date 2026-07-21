@@ -75,12 +75,19 @@ h4 {
     transform: scale(1.1);
 }
 
-#the-great-canadian-swim-word:hover, #every-try-counts:hover, #every-ripple-matters:hover, #text-decoration-line {
+#the-great-canadian-swim-word:hover, #every-try-counts:hover, #every-ripple-matters:hover, #footer-details:hover {
     text-decoration-line: underline;
 }
 
 #footer-details:hover {
     transform: scale(1.050);
+}
+
+#footer-details {
+    justify-content: center;
+    color: rgb(28, 60, 101);
+    display: flex;
+    text-align: center;
 }
 
 #get-started:hover {
