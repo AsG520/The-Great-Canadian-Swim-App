@@ -36,7 +36,7 @@ h4 {
 
 /* HTML Classes */ 
 .container {
-    width: 360px;
+    width: 340px;
     height: 695px;
     background-color: white;
     border-radius: 20px;
@@ -71,8 +71,12 @@ h4 {
     border: none;
 }
 
-#welcome-page-logo:hover, #map-of-canada-picture:hover {
+#welcome-page-logo:hover {
     transform: scale(1.1);
+}
+
+#map-of-canada-picture:hover {
+    transform: scale(1.050);
 }
 
 #the-great-canadian-swim-word:hover, #every-try-counts:hover, #every-ripple-matters:hover, #footer-details:hover {
