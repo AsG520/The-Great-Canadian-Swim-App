@@ -30,7 +30,7 @@ h1 {
 /* HTML Classes */ 
 .container {
     width: 327px;
-    height: 870px;
+    height: 880px;
     background-color: white;
     border-radius: 20px;
     border-top: none;
@@ -50,7 +50,7 @@ h1 {
 }
 
 .goal-option {
-    width: 280px;
+    width: 265px;
     display: flex;
     justify-content: space-around;
     align-items: center;
