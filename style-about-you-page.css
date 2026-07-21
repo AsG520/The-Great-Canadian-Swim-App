@@ -25,7 +25,7 @@ body {
 
 /* HTML Classes */ 
 .container {
-    width: 380px;
+    width: 327px;
     height: 835px;
     background-color:   white;
     border-radius: 20px;
@@ -47,7 +47,7 @@ body {
 
 /* HTML IDs */
 #disability-option, #parent-caregiver-option, #supporter-option, #club-coach-option, #education-option, #organization-option {
-    width: 326px;
+    width: 324px;
     height: 56px;
     font-size: 18px;
     display: flex;
