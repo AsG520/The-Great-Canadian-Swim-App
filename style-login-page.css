@@ -12,7 +12,7 @@ body {
     font-weight: 700;
     font-style: normal;
     animation-name: fadeIn;
-    animation-duration: 6s;
+    animation-duration: 1s;
     color: rgb(28, 60, 101);
     animation-delay: 0s;
     animation-fill-mode: forwards;

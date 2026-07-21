@@ -14,7 +14,7 @@ body {
     overflow-x: visible;
     overflow-y: visible;
     animation-name: fadeIn;
-    animation-duration: 6s;
+    animation-duration: 1s;
     animation-delay: 0s;
     animation-fill-mode: forwards;
     animation-play-state: running;
