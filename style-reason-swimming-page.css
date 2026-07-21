@@ -71,6 +71,14 @@ h4 {
     width: 260px;
 }
 
+.private-details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 260px;
+}
+
 #footer-details:hover {
     transform: scale(1.050);
 }
