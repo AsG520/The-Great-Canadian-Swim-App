@@ -114,6 +114,13 @@ h1:hover, h4:hover, #footer-details:hover {
     text-decoration-line: underline;
 }
 
+#footer-details {
+    justify-content: center;
+    color: rgb(28, 60, 101);
+    display: flex;
+    text-align: center;
+}
+
 #create-an-account:hover, #sign-in:hover {
     background-color: rgb(28, 60, 101);
 }

@@ -23,7 +23,7 @@
  const db = getFirestore(app);
 
 
- const forgotPassword = document.getElementById("forget-password-word");
+ const forgotPassword = document.getElementById("forgot-password-word");
 console.log(forgotPassword);
 if (forgotPassword) {
 
