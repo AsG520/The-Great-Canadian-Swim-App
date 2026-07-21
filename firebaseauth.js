@@ -147,7 +147,7 @@ function customAlert(message) {
         // Check if credentials were already filled
         if (userData.credentialsCompleted) {
 
-            window.location.href = "homepage.html";
+            window.location.href = "index-about-you-page.html";
 
         } else {
 

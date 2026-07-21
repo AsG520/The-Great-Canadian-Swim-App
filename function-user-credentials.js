@@ -2,6 +2,7 @@
 
 import {initializeApp} from "https://www.gstatic.com/firebasejs/10.11.1/firebase-app.js";
 import {getFirestore, doc, updateDoc} from "https://www.gstatic.com/firebasejs/10.11.1/firebase-firestore.js";
+import { getAuth, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/10.11.1/firebase-auth.js";
 
 const firebaseConfig = {
     apiKey: "AIzaSyANYbFNAyk1fAaDXc7gPnkeRNTTgXyeViU",
@@ -27,6 +28,14 @@ function customAlert(message) {
 
 const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
+const auth = getAuth(app);
+
+let currentUser = null;
+
+onAuthStateChanged(auth, (user) => {
+    currentUser = user;
+});
+
 const submit = document.getElementById("submit");
 
 submit.addEventListener("click", async () => {
@@ -42,17 +51,28 @@ submit.addEventListener("click", async () => {
         return;
     }
 
-    const userID = localStorage.getItem("loggedInUserId");
+    //const userID = localStorage.getItem("loggedInUserId");
     const userData = {username: username, age: age, gender: gender, height: height, weight: weight, credentialsCompleted: true};
-    const userRef = doc(db, "users", userID);
-    await updateDoc(userRef, userData);
-    window.location.href = "homepage.html";
-});
+    const user = currentUser;
 
-let submitButton = document.getElementById("submit");
-
-function callAboutYouPage() {
-    window.location.href = "index-about-you-page.html";
+if (!user) {
+    customAlert("You must be signed in.");
+    return;
+}
+if (!user) {
+    customAlert("You must be signed in.");
+    return;
 }
 
-submitButton.addEventListener("click", callAboutYouPage);
+const userRef = doc(db, "users", user.uid);
+    try {
+        console.log("Current user:", auth.currentUser);
+        console.log("Auth UID:", auth.currentUser?.uid);
+        await updateDoc(userRef, userData);
+
+        window.location.href = "homepage.html";
+    } catch (error) {
+        console.error(error);
+        customAlert(error.message);
+    }
+});
