@@ -12,12 +12,20 @@ function callLoginPage() {
     window.location.href = "index-login-page.html";
 }
 
-function openAppContent() {
-    window.open("app-content.pdf", "_blank");
+function callSwimAcrossCanadaPage() {
+    window.location.href = "index-swim-across-canada-page.html";
+}
+
+function callMakeADifferencePage() {
+    window.location.href = "index-make-a-difference-page.html";
+}
+
+function callBuildCommunityPage() {
+    window.location.href = "index-build-community-page.html";
 }
 
 createAnAccount.addEventListener("click", callAccountRegistrationPage);
 signIn.addEventListener("click", callLoginPage);
-buildCommunityOption.addEventListener("click", openAppContent);
-swimAcrossCanadaOption.addEventListener("click", openAppContent);
-makeADifferenceOption.addEventListener("click", openAppContent); 
+swimAcrossCanadaOption.addEventListener("click", callSwimAcrossCanadaPage);
+makeADifferenceOption.addEventListener("click", callMakeADifferencePage);
+buildCommunityOption.addEventListener("click", callBuildCommunityPage);
