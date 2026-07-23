@@ -92,7 +92,7 @@ submit.addEventListener("click", async () => {
     console.log("Auth UID:", auth.currentUser?.uid);
     await updateDoc(userRef, userData);
 
-   // window.location.href = "index-all-set-page.html";
+    window.location.href = "index-all-set-page.html";
   } catch (error) {
     console.error(error);
     customAlert(error.message);

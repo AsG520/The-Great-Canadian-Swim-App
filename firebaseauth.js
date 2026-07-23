@@ -175,7 +175,7 @@ async function checkUserInfo(user) {
   }
 
   // Everything completed
-  window.location.href = "index-home-page.html";
+ // window.location.href = "index-home-page.html";
 }
 
  const signUp=document.getElementById('submitSignUp'); 
