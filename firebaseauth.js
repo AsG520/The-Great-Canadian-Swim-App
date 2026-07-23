@@ -101,7 +101,11 @@ if (!docSnap.exists()) {
         sessions: 0,
         attempts: 0,
         username: "",
-        credentialsCompleted: false
+        credentialsCompleted: false,
+        aboutYouCompleted: false,
+        whatReasonCompleted: false,
+        yourGoalCompleted: false,
+        allSetPageCompleted: false,
     });
 
 } else {
@@ -111,7 +115,7 @@ if (!docSnap.exists()) {
     });
 }
         localStorage.setItem("loggedInUserId", user.uid);
-       checkUserCredentials(user);
+       checkUserInfo(user);
 
     } catch (error) {
         console.error(error);
@@ -133,30 +137,47 @@ function customAlert(message) {
     }, 3000); // Hides after 3 seconds
 }
 
- async function checkUserCredentials(user) {
+// Function to ensure user filled out about you page, if yes, skips the page
+async function checkUserInfo(user) {
+  const docRef = doc(db, "users", user.uid);
 
-    const docRef = doc(db, "users", user.uid);
+  const docSnap = await getDoc(docRef);
 
-    const docSnap = await getDoc(docRef);
+  // Check if it exists
+  if (!docSnap.exists()) {
+    return;
+  }
+  const userData = docSnap.data();
 
+  if (!userData.credentialsCompleted) {
+    window.location.href = "index-user-credentials.html";
+    return;
+  }
 
-    if (docSnap.exists()) {
+  if (!userData.aboutYouCompleted) {
+    window.location.href = "index-about-you-page.html";
+    return;
+  }
 
-        const userData = docSnap.data();
+  if (!userData.whatReasonCompleted) {
+    window.location.href = "index-reason-swimming-page.html";
+    return;
+  }
 
-        // Check if credentials were already filled
-        if (userData.credentialsCompleted) {
+  if (!userData.yourGoalCompleted) {
+    window.location.href = "index-what-goal-page.html";
+    return;
+  }
 
-            window.location.href = "index-about-you-page.html";
+  if (!userData.allSetPageCompleted) {
+    window.location.href = "index-all-set-page.html";
+    return;
+  }
 
-        } else {
-
-            window.location.href = "index-user-credentials.html";
-
-        }
-
-    }
+  // Everything completed
+  window.location.href = "index-home-page.html";
 }
+
  const signUp=document.getElementById('submitSignUp'); 
  if (signUp) {
  signUp.addEventListener('click', (event)=>{ // When signUp button is clicked, it prevent page refresh, gets user info
@@ -178,7 +199,11 @@ function customAlert(message) {
             sessions: 0,
             attempts: 0,
             username: "",
-            credentialsCompleted: false
+            credentialsCompleted: false,
+            aboutYouCompleted: false,
+            whatReasonCompleted: false,
+            yourGoalCompleted: false,
+            allSetPageCompleted: false,
         };
         customAlert('Account Created Successfully'); // Show message that account was created sussessfully
   const docRef = doc(db, "users", user.uid);
@@ -220,7 +245,7 @@ if(signIn) {
 
         localStorage.setItem('loggedInUserId', user.uid);
 
-       await checkUserCredentials(user);
+       await checkUserInfo(user);
         //window.location.href = 'index.html';
 
     } catch (error) {
@@ -238,6 +263,4 @@ if(signIn) {
     }
 }
 });
-
 }
- 

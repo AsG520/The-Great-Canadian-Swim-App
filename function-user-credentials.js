@@ -59,10 +59,6 @@ if (!user) {
     customAlert("You must be signed in.");
     return;
 }
-if (!user) {
-    customAlert("You must be signed in.");
-    return;
-}
 
 const userRef = doc(db, "users", user.uid);
     try {
@@ -70,7 +66,7 @@ const userRef = doc(db, "users", user.uid);
         console.log("Auth UID:", auth.currentUser?.uid);
         await updateDoc(userRef, userData);
 
-        window.location.href = "homepage.html";
+        window.location.href = "index-about-you-page.html";
     } catch (error) {
         console.error(error);
         customAlert(error.message);
