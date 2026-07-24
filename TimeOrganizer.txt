@@ -119,3 +119,12 @@ Monday, July 20
 
 Tuesday, July 21
 - Duration/Time: 2h
+
+Wednesday, July 22 
+- Duration/Time: 3h
+
+Thursday, July 23
+- Duration/Time: 3h
+
+Friday, July 24
+- Duration/Time: 1.5h
